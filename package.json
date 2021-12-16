@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.6"
+    "bootstrap": "^4.6.1"
   },
   "devDependencies": {
     "node-sass": "^5.0.0",

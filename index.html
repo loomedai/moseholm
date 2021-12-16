@@ -13,6 +13,9 @@
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://cdn.tiny.cloud/1/y7etbb6fgqruwg5o86t8eo2wywvvdlu54udfhebfjweavmfg/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
 </head>
 
 <body>
@@ -52,10 +55,17 @@
 	</div>
 </nav>
 
-	<div class="bg-beauty">test</div>
+<div class="bg-beauty" id="box">
+	<form method="post">
+		<textarea id="mytextarea">Hello, World!</textarea>
+	</form>
+</div>
 
-
-
+<script>
+	tinymce.init({
+		selector: '#mytextarea'
+	});
+</script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

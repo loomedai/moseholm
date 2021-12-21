@@ -62,7 +62,7 @@ foreach ($blogs as $blog){
     </div>
 </nav>
 
-<div class="bg-beauty" id="box">test</div>
+ <div class="bg-beauty" id="box">test</div>
 
 
 

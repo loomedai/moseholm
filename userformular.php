@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Sigende titel</title>
+    <title>Bruger</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -22,6 +22,10 @@
 </head>
 
 <body>
+
+    <form method="post" action="userformular.php">
+        
+    </form>
 
 <script>
     tinymce.init({

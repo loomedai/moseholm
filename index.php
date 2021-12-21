@@ -13,7 +13,7 @@ foreach ($blogs as $blog){
 <head>
     <meta charset="utf-8">
 
-    <title>Sigende titel</title>
+    <title>Moseholm Gård</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">

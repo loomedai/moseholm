@@ -62,7 +62,8 @@ h2 {
 
 .kasse1 {
 	background-image: url("img/garlic picture.png");
-	background-image: cover;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .kasse2{
@@ -71,5 +72,11 @@ h2 {
 }
 
 .kasse3 {
-	background-image: url("");
+	background-image: url("img/kaal.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.kasse4 {
+	background-color: #333847;
 }

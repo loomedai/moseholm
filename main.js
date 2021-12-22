@@ -1,0 +1,1 @@
+const parallax = document.getElementById("kas1")

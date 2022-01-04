@@ -3,14 +3,9 @@
 }
 
 body {
-
 }
 
-#container{
-	width: 100%;
-	height: 100%;
-
-}
+// Source mixin
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -32,6 +27,11 @@ p {
 	padding: 0;
 }
 
+.container-fluid{
+	padding: 0;
+	scroll-snap-type: y mandatory;
+}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -49,6 +49,7 @@ img {
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
+	scroll-snap-align: start;
 
 }
 

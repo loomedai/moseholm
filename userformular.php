@@ -105,8 +105,15 @@ if(!empty($_POST["data"])){
 
         <div class="col-12 col-md-6">
             <div class="form-group">
-
-                <input class="form-control" type="text" name="data[box]" id="boxDrop" placeholder="Vælg box" value="">
+                <select class="form-control" name=data[box]">
+                    <option value="">Vælg boks</option>
+                    <option value="">Stor Boks</option>
+                    <option value="">Lille Boks</option>
+                    <option value="">Bland Selv</option>
+                    <option value="">Beauty Boks</option>
+                </select>
+                <!--
+                <input class="form-control" type="text" name="data[box]" id="boxDrop" placeholder="Vælg box" value=""> -->
             </div>
         </div>
 

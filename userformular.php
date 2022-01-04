@@ -49,10 +49,10 @@ if(!empty($_POST["data"])){
 
 
 </head>
-<body>
+<body class="userBod vh-100 ">
 
 <h1 class="m-5">Opret bruger</h1>
-<form class="m-5" method="post" action="userformular.php" enctype="multipart/form-data">
+<form class="m-5 bg-gradient-primary" method="post" action="userformular.php" enctype="multipart/form-data">
 
     <div class="row">
 
@@ -68,12 +68,6 @@ if(!empty($_POST["data"])){
 
             </div>
 
-        </div>
-        <br>
-        <div class="col-12 col-md-6">
-            <div class="form-group">
-                <input class="form-control" type="email" name="data[email]" id="email" placeholder="Email" value="">
-            </div>
         </div>
         <br>
 
@@ -95,6 +89,13 @@ if(!empty($_POST["data"])){
         </div>
         <br>
 
+        <div class="col-12 col-md-6">
+            <div class="form-group">
+                <input class="form-control" type="email" name="data[email]" id="email" placeholder="Email" value="">
+            </div>
+        </div>
+        <br>
+
         <div class="col-12">
             <div class="form-group">
                 <label for="address">Adresse</label>
@@ -102,25 +103,20 @@ if(!empty($_POST["data"])){
             </div>
         </div>
 
-
         <div class="col-12 col-md-6">
             <div class="form-group">
-                <label for="box">Vælg box i dropdown menuen</label>
-                <input class="form-control" type="text" name="data[box]" id="boxDrop" value="">
+
+                <input class="form-control" type="text" name="data[box]" id="boxDrop" placeholder="Vælg box" value="">
             </div>
         </div>
-        <br>
 
 
-        <div class="col-12">
+        <div class="col-12 col-md-3 offset-md-3">
 
 
-
-            <div class="col-12 col-md-6">
                 <button class="form-control btn btn-primary" type="submit" id="btnSubmit">Opret bruger</button>
 
 
-            </div>
 
         </div>
 

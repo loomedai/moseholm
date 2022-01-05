@@ -6,12 +6,9 @@ if(!empty($_POST["data"])){
     $data = $_POST["data"];
     $file = $_FILES;
 
-    if(!empty($file["prodPhoto"]["tmp_name"])){
-        move_uploaded_file($file["prodPhoto"]["tmp_name"], "uploads/" . basename($file["prodPhoto"]["name"]));
-    }
 
 
-    $sql = "INSERT INTO users (username, email, password, firstname, lastname, address, box) VALUES (:prodTitel, :prodDes, :prodYear, :prodCountry, :prodDir, :prodTime, :prodCast, :prodMusic, :prodGenre, :prodPhoto)";
+    $sql = "INSERT INTO users (username, email, password, firstname, lastname, address, box) VALUES (:username, :email, :password, :firstname, :lastname, :address, :box)";
     $bind = [":username" => $data["username"],
         ":email" => $data["email"],
         ":password" => $data["password"],
@@ -22,7 +19,7 @@ if(!empty($_POST["data"])){
     ];
 
     $db ->sql( $sql, $bind, false);
-    echo "Din bruger er nu oprettet, og du kan forvente din første box den kommende lørdag. <a href='insert.php'>Tilmeld en ny box.</a>";
+    echo "Din bruger er nu oprettet, og du kan forvente din første box den kommende lørdag. <a href='index.html'>Tilmeld en ny box.</a>";
     exit;
 }
 ?>
@@ -52,28 +49,19 @@ if(!empty($_POST["data"])){
 <body class="userBod vh-100 ">
 
 <h1 class="m-5">Opret bruger</h1>
-<form class="m-5 bg-gradient-primary" method="post" action="userformular.php" enctype="multipart/form-data">
+<form class="m-5 bg-gradient-primary" method="POST" action="userformular.php" enctype="multipart/form-data">
 
     <div class="row">
 
         <div class="col-12 col-md-6">
             <div class="form-group">
-                <input class="form-control" type="text" name="data[username]" id="udername" placeholder="Brugernavn" value="">
+                <input class="form-control text-primary" type="text" name="data[username]" id="udername" placeholder="Brugernavn" value="">
             </div>
         </div>
 
         <div class="col-12 col-md-6">
             <div class="form-group">
-                <input class="form-control" type="text" name="data[password]" id="password" placeholder="Kodeord" value="">
-
-            </div>
-
-        </div>
-        <br>
-
-        <div class="col-12 col-md-6">
-            <div class="form-group">
-                <input class="form-control" type="text" name="data[firstname]" id="firstname" placeholder="Fornavn" value="">
+                <input class="form-control text-primary" type="text" name="data[password]" id="password" placeholder="Kodeord" value="">
 
             </div>
 
@@ -82,7 +70,7 @@ if(!empty($_POST["data"])){
 
         <div class="col-12 col-md-6">
             <div class="form-group">
-                <input class="form-control" type="text" name="data[lastname]" id="lastname" placeholder="Efternavn" value="">
+                <input class="form-control text-primary" type="text" name="data[firstname]" id="firstname" placeholder="Fornavn" value="">
 
             </div>
 
@@ -91,7 +79,16 @@ if(!empty($_POST["data"])){
 
         <div class="col-12 col-md-6">
             <div class="form-group">
-                <input class="form-control" type="email" name="data[email]" id="email" placeholder="Email" value="">
+                <input class="form-control text-primary" type="text" name="data[lastname]" id="lastname" placeholder="Efternavn" value="">
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="col-12 col-md-6">
+            <div class="form-group">
+                <input class="form-control text-primary" type="email" name="data[email]" id="email" placeholder="Email" value="">
             </div>
         </div>
         <br>
@@ -99,13 +96,13 @@ if(!empty($_POST["data"])){
         <div class="col-12">
             <div class="form-group">
                 <label for="address">Adresse</label>
-                <textarea class="form-control" name="data[address]" id="address" placeholder="Vejnavn, hus og etage nummer, postnummer og by."></textarea>
+                <textarea class="form-control text-primary" name="data[address]" id="address" placeholder="Vejnavn, hus og etage nummer, postnummer og by."></textarea>
             </div>
         </div>
 
         <div class="col-12 col-md-6">
             <div class="form-group">
-                <select class="form-control" name=data[box]">
+                <select class="form-control text-primary" name=data[box]">
                     <option value="">Vælg boks</option>
                     <option value="">Stor Boks</option>
                     <option value="">Lille Boks</option>
@@ -135,7 +132,7 @@ if(!empty($_POST["data"])){
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     tinymce.init({
-        selector: '#prodDes',
+        selector: ''
 
     });
     alert("Denne side vil måske bruge coockies en dag. Who knows. Du har ikke noget valg! ")

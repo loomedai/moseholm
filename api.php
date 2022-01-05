@@ -24,7 +24,7 @@ $data["nameYear"] = '2002';
 
 
 if($data["password"] == "Ghibli") {
-    $sql = "SELECT * FROM ghiblifilm WHERE 1=1";
+    $sql = "SELECT * FROM users WHERE 1=1";
     $bind = [];
 
     if(!empty($data["nameSearch"])){

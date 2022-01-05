@@ -1,24 +1,50 @@
 <?php
 require "settings/init.php";
 
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    function validate ($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    $username = validate($_POST['username']);
+    $password = validate($_POST['password']);
 
-if(!empty($_POST["data"])){
-    $data = $_POST["data"];
-    $file = $_FILES;
+    if (empty($username)) {
+        header("Location: login.php?error=Brugernavn skal udfyldes");
+        exit ();
+
+    } else if (empty($password)) {
+        header("Location: login.php?error=kodeord skal udfyldes");
+        exit ();
+
+    } else {
+        echo "valid input";
+    }
+
+}
+else{ header("HTTP/1.1 401 Unauthorized");
+
+
+}
+/*
+ $data["password"] = "$_POST";
 
 
 
-    $sql = "INSERT INTO users (username, email, password) VALUES (:username, :email, :password)";
+if($data["password"] == "") {
+    $sql = "SELECT * FROM users WHERE 1=1";
     $bind = [":username" => $data["username"],
         ":email" => $data["email"],
-        ":password" => $data["password"],
+        ":password" => $data["password"];
 
-    ];
+} else {
+    header("HTTP/1.1 401 Unauthorized");
+    $error["errorMessage"] = "Brugernavn eller kodeord passer ikke <a href='login.php'>prøv igen.</a>";
+    echo json_encode($error);
+} */
 
-    $db ->sql( $sql, $bind, false);
-    echo "<a href='index.html'>Se dit abonnoment</a>";
-    exit;
-}
 ?>
 
 
@@ -44,13 +70,14 @@ if(!empty($_POST["data"])){
 </head>
 <body class="userBod vh-100 ">
 
-<form class="m-5 bg-gradient-primary" method="POST" action="userformular.php" enctype="multipart/form-data">
+<form class="m-5 bg-gradient-primary" method="post" action="#" enctype="multipart/form-data">
 
 <h1 class="col-12 col-md-6 m-auto"">Login på din bruger</h1>
 <br>
 
-<p class="col-12 col-md-6 m-auto""> Har du ikke allerede en bruger så kan du let <a href='index.html'>oprette en.</a></p>
+<p class="col-12 col-md-6 m-auto""> Har du ikke allerede en bruger så kan du let <a href='userformular.php.'>oprette en.</a></p>
 <br><br>
+
     <div class="col-12 col-md-6 m-auto">
         <div class="form-group">
             <input class="form-control text-primary" type="text" name="data[username]" id="" placeholder="Skriv dit brugernavn" value="">
@@ -61,6 +88,14 @@ if(!empty($_POST["data"])){
         <div class="form-group">
             <input class="form-control text-primary" type="password" name="data[password]" id="" placeholder="Skriv dit kodeord" value="">
         </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-12 col-md-3 m-auto ">
+
+        <button class="form-control btn btn-primary" type="submit" name="submit"  id="login" value="Login">Login</button>
     </div>
 
 </form>

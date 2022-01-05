@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<div id="container">
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
 	<a class="navbar-brand text-winter" href="#">Moseholm Gård</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,24 +55,39 @@
 	</form>
 	-->
 
-
+<div class="containerr">
+	<section>
 	<div class="kasse kasse1" id="kas1">
 		<h2>Billede til kasse 1</h2>
-	</div>
-
+	</div></section>
+	<section>
 	<div class="kasse kasse2" id="kas2">
 		<h2>Billede til kasse 2</h2>
-	</div>
-
+	</div></section>
+	<section>
 	<div class="kasse kasse3" id="kas3">
 		<h2>Billede til pluk selv kassen</h2>
-	</div>
-
+	</div></section>
+	<section>
 	<div class="kasse kasse4" id="kas4">
 		<h2>Billede til beauty</h2>
-	</div>
+	</div></section>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+	var defaultOptions = {
+		container: document.body,
+		panelSelector: '> section',
+		directionThreshold: 50,
+		delay: 0,
+		duration: 300,
+		easing: function(t) { return t },
+	};
+
+	new PanelSnap(options);
+</script>
+
 <script>
 	$('.navbar a').on('click', function (e){
 		if(this.hash !==''){

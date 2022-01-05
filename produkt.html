@@ -23,7 +23,9 @@
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <div class="underside.header">Menulinje</div>
+    <nav class="navbar sticky-top navbar-light bg-light">
+        <button class="btn btn-outline-winter" type="button">Til forside</button>
+    </nav>
 </head>
 
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
@@ -32,10 +34,10 @@
 <div class="container.produkt">
     <div class="header.billede">
         <picture class="forsidebillede">
-            <source srcset="img/banner1.jpg" media="(max-width: 800px)">
-            <source srcset="img/banner1.jpg" media="(max-width: 1000px)">
-            <source srcset="img/banner1.jpg">
-            <img src="img/banner1.jpg" alt="img/banner1.jpg">
+            <source srcset="img/banner.logo1.jpg" media="(max-width: 500px)">
+            <source srcset="img/banner.logo2.jpg" media="(max-width: 1200px)">
+            <source srcset="img/banner.logo3.jpg">
+            <img src="img/banner.logo1.jpg" alt="img/banner.logo3.jpg">
         </picture>
     </div>
     <br>
@@ -45,18 +47,18 @@
             <footer class="blockquote-footer">Mikkel & Line <cite title="Source Title">Moseholm gårdbutik</cite></footer>
         </blockquote>
     </div>
-    <br>
+    <br><br>
     <div class="container mw-100 justify-content-center">
         <div class="card mb-3 align-items-center" style="max-width: 1920px;">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="img/gullerod.jpg" alt="...">
+                    <img src="img/produkt1.jpg" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Dagcreme med honning</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="card-text"><small class="text-muted">Kan ikke købes online - mød os på gården</small></p>
                     </div>
                 </div>
             </div>
@@ -65,13 +67,13 @@
         <div class="card mb-3 align-items-center" style="max-width: 1920px;">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="img/gullerod.jpg" alt="...">
+                    <img src="img/produkt1.jpg" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title">Dagcreme med honning</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="card-text"><small class="text-muted">Kan ikke købes online - mød os på gården</small></p>
                     </div>
                 </div>
             </div>
@@ -93,10 +95,20 @@
         </div>
     </div>
     <br>
-    <div class="banner2.kasser text-center">
-        <div class="header.billede">
-          <h2 class="kasser">Prøv vores måltidskasser</h2>
-        </div>
+    <div class="mellem.billede">
+        <picture class="mellemstykke">
+            <source srcset="img/mellemstykke.lille.jpg" media="(max-width: 500px)">
+            <source srcset="img/mellemstykke.mellem.jpg" media="(max-width: 1200px)">
+            <source srcset="img/mellemstykke.jpg">
+            <img src="img/mellemstykke.lille.jpg" alt="img/mellemstykke.jpg">
+        </picture>
+    </div>
+    <br>
+    <div class="bannertekst">
+        <blockquote class="blockquote text-center">
+            <p class="mb-0">Prøv vores måltidskasser</p>
+            <footer class="blockquote-footer">Mikkel & Line <cite title="Source Title">Moseholm gårdbutik</cite></footer>
+        </blockquote>
     </div>
     <br>
     <div class="grøntkasseroverigt">
@@ -104,7 +116,7 @@
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
                     <div class="card h-100" style="width: 100;">
-                        <img src="img/gullerod.jpg" class="card-img-top" alt="...">
+                        <img src="img/kasse4.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
                             <h5 class="card-title">Kasse 1</h5>
                             <p class="card-text">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
@@ -116,7 +128,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100" style="width: 100;">
-                        <img src="img/gullerod.jpg" class="card-img-top" alt="...">
+                        <img src="img/kasse2.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
                             <h5 class="card-title">Kasse 2</h5>
                             <p class="card-text">Grønt og lidt luxus! - Særlig god til mad-nørderi
@@ -127,7 +139,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100" style="width: 100;">
-                        <img src="img/gullerod.jpg" class="card-img-top" alt="...">
+                        <img src="img/kasse3.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
                             <h5 class="card-title">Kasse 3</h5>
                             <p class="card-text">pluk selv! kom og være med.. og vælg dine favoritter!
@@ -138,7 +150,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100" style="width: 100;">
-                        <img src="img/gullerod.jpg" class="card-img-top" alt="...">
+                        <img src="img/kasse4.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
                             <h5 class="card-title">Kasse 4</h5>
                             <p class="card-text">Skønhed kommer både inde og udefra!

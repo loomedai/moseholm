@@ -1,8 +1,21 @@
-const parallax = document.getElementById("kas1");
 
-window.addEventListener(("scroll", fucntion (e)){
-    let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset * 0.7 + "px";
+    $(function (){
+    $.scrollify({
+        section : '.scroll',
+    });
+});
 
+
+
+
+    $('.navbar a').on('click', function (e){
+    if(this.hash !==''){
+    e.preventDefault();
+    const hash = this.hash;
+    $('html, body').animate({
+    scrollTop: $(hash).offset().top
+},800);
+}
 })
+
 

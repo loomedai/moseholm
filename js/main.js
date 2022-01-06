@@ -45,7 +45,7 @@ function moveKasse(){
     const hash = this.hash;
     $('html, body').animate({
     scrollTop: $(hash).offset().top
-},800);
+},500);
 }
 })
 

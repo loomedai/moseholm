@@ -1,0 +1,197 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+	<!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+	<meta charset="utf-8">
+
+	<!-- Titel som ses oppe i browserens tab mv. -->
+	<title>Sigende titel</title>
+
+	<!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+	<meta name="robots" content="All">
+	<meta name="author" content="Udgiver">
+	<meta name="copyright" content="Information om copyright">
+
+	<!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+	<!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<nav class="navbar sticky-top bg-white justify-content-center">
+		<a class="navbar-brand" href="#">
+			<img src="img/logo_3.png" width="50" class="d-inline-block align-top" alt="">
+		</a>
+	</nav>
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<div class="container.produkt">
+	<div class="header.billede">
+		<picture class="forsidebillede">
+			<source srcset="img/Banner.lille.1.jpg" media="(max-width: 500px)">
+			<source srcset="img/banner1.jpg" media="(max-width: 1200px)">
+			<source srcset="img/banner.stor.1.jpg">
+			<img src="img/Banner.lille.1.jpg" alt="img/banner.stor.1.jpgg">
+		</picture>
+	</div>
+	<br>
+	<div class="bannertekst">
+		<blockquote class="blockquote text-center">
+			<p class="mb-0 text-primary font-weight-bold">"Hej og velkommen på landet"</p>
+			<footer class="blockquote-footer">Mikkel & Line  <cite title="Source Title">Moseholm gårdbutik</cite></footer>
+		</blockquote>
+	</div>
+	<br>
+	<div class="card mb-3 m-5 border-0" style="max-width: 1920px;">
+		<div class="row no-gutters">
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Er du til velsmagende økologiske grøntsager der er dyrket med respekt for vores klima og med fokus på vitaminer og friskhed?... så kom og besøg os!</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="img/Banner.lille.1.jpg" alt="...">
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="card mb-3 m-5 border-0" style="max-width: 1920px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+				<img src="img/Banner.lille.1.jpg" alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Moseholms historie</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="card mb-3 m-5 border-0" style="max-width: 1920px;">
+		<div class="row no-gutters">
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Bæredygtighed og klimaaftryk</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="img/Banner.lille.1.jpg" alt="...">
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="card mb-3 m-5 border-0" style="max-width: 1920px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+				<img src="img/Banner.lille.1.jpg" alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Grøntkasser og Pluk-selv</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="mellem.billede">
+		<picture class="mellemstykke">
+			<source srcset="img/mellemstykke.lille.jpg" media="(max-width: 500px)">
+			<source srcset="img/mellemstykke.mellem.jpg" media="(max-width: 1200px)">
+			<source srcset="img/mellemstykke.jpg">
+			<img src="img/mellemstykke.lille.jpg" alt="img/mellemstykke.jpg">
+		</picture>
+	</div>
+	<br>
+	<div class="bannertekst">
+		<blockquote class="blockquote text-center">
+			<p class="mb-0 text-primary font-weight-bold">"Prøv vores måltidskasser"</p>
+			<footer class="blockquote-footer">Mikkel & Line <cite title="Source Title">Moseholm gårdbutik</cite></footer>
+		</blockquote>
+	</div>
+	<br>
+	<br>
+	<div class="grøntkasseroverigt">
+		<div class="card-bokse m-5">
+			<div class="row row-cols-1 row-cols-md-4 g-4">
+				<div class="col">
+					<div class="card h-100" style="width: 100;">
+						<img src="img/kasse4.jpg" class="card-img-top" alt="...">
+						<div class="card-body bg-light">
+							<h5 class="card-title">Kasse 1</h5>
+							<p class="card-text">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
+								Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
+								Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100" style="width: 100;">
+						<img src="img/kasse2.jpg" class="card-img-top" alt="...">
+						<div class="card-body bg-light">
+							<h5 class="card-title">Kasse 2</h5>
+							<p class="card-text">Grønt og lidt luxus! - Særlig god til mad-nørderi
+								I denne kasse finder du ud over ca 5 kg. grøntsager (minimum 5 forskellige varianter) også hjemmelavede økologiske produkter. Moseholm producere selv lækre spislige specialiteter men samarbejder også med bønder, smags-entusiaster og sylte-specialister på vestsjælland. Produkterne kan derfor være alt fra mamelade, sirup, most og meget mere - besøg evt. vores gårdbutik og hør nærmere om udvalget du kan møde i denne kasse.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100" style="width: 100;">
+						<img src="img/kasse3.jpg" class="card-img-top" alt="...">
+						<div class="card-body bg-light">
+							<h5 class="card-title">Kasse 3</h5>
+							<p class="card-text">Pluk selv! Kom og være med.. og vælg dine favoritter!
+								Bland selv din egen grøntkasse hver 2. uge og sammensæt lige præcis dét du står og mangler.. og bruger mest af. Udvælg 5 kg grøntsager til hver kasse.. og ønsker du også selv at høste, så grip en skovl, tang eller trillebøre ved havedøren og slå dig løs på Moseholms marker lige uden for. (for at være en del af pluk-selv-høsterne skal man minimum købe 3 måneders abonnement)
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100" style="width: 100;">
+						<img src="img/kasse4.jpg" class="card-img-top" alt="...">
+						<div class="card-body bg-light">
+							<h5 class="card-title">Kasse 4</h5>
+							<p class="card-text">Skønhed kommer både inde og udefra!
+								Bestiller du denne kasse præsentere vi dig på Moseholms skønhedsunivers og levere en grøntkasse hver 2.uge med lækre grøntsager og skønne produkter til din hud.
+								Kassen sammensættes af vores dygtige team og alt hvad du bør vide om blandt andet vores honning-dagcreme og følger med i kassen.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="knap til bestilling">
+		<div class="jumbotron">
+			<h1 class="display-4">Grøntkasse - Ja tak!</h1>
+			<p class="lead">Få leveret en spændende grøntkasse efter eget valg hver uge, og smag Moseholms udvalg af årstidens grøntsager. Kasserne er pakket med kærlighed og tilmeldingen er ikke bindende - læse mere her og bestil den kasse der passer bedst til Jer</p>
+			<hr class="my-4">
+			<p>Indholdet af kasserne variere efter årstid - og pakkes på Moseholm gård</p>
+			<a class="btn btn-primary btn-lg" href="#" role="button">Bestil kasse</a>
+		</div>
+	</div>
+
+
+
+</div>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

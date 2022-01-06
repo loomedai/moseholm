@@ -43,9 +43,6 @@
 			<li class="nav-item active">
 				<a class="nav-link text-winter" href="#kas4">Beauty Kasse <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link text-winter" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
 
 		</ul>
 		<form class="d-flex">
@@ -56,17 +53,25 @@
 	</div>
 </nav>
 
-<!--  formular:
-	 <form method="post">
-		<textarea id="mytextarea">Hello, World!</textarea>
-	</form>
-	-->
 
 	<section class="scroll">
 	<div class="kasse kasse1" id="kas1">
 		<h2>Billede til kasse 1</h2>
+
+
 	</div>
+
+		<button class="btn btn-primary btn__first" data-toggle="collapse" data-target=".collapse.first" data-text="Collapse">
+			Læs mere om vores Lille kasse
+		</button>
+
+		<div class="block collapse first">
+			<div class="block__content kasse">
+				I'm the first content!
+			</div>
+		</div>
 	</section>
+
 	<section class="scroll">
 	<div class="kasse kasse2" id="kas2">
 		<h2>Billede til kasse 2</h2>

@@ -1,5 +1,6 @@
 
-    $(function (){
+    $(function ()
+    {
     $.scrollify({
         section : '.scroll',
     });
@@ -8,7 +9,8 @@
 
 
 
-    $('.navbar a').on('click', function (e){
+    $('.navbar a').on('click', function (e)
+    {
     if(this.hash !==''){
     e.preventDefault();
     const hash = this.hash;

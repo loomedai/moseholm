@@ -80,13 +80,35 @@ h2 {
 	height: 50vh;
 	background-color: white;
 }
-.footer{
+.some{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 50vh;
+	height: 20vh;
 	background-color: black;
+}
+.list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 10vh;
+	background-color: black;
+}
+.sam{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 5vh;
+	background-color: black;
+}
+p{
+	color: #f8f8f8;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 15px;
 }
 
 .m-5 {
@@ -158,4 +180,10 @@ h2 {
 	padding-right: 9px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.fa-user{
+	float: right;
+	display: flex;
+	justify-content: right;
 }

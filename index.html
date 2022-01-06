@@ -56,20 +56,20 @@
 
 	<section class="scroll">
 	<div class="kasse kasse1" id="kas1">
-		<h2>Billede til kasse 1</h2>
-
-
-	</div>
-
-		<button class="btn btn-primary btn__first" data-toggle="collapse" data-target=".collapse.first" data-text="Collapse">
-			Læs mere om vores Lille kasse
-		</button>
-
-		<div class="block collapse first">
+		<h2 id="frKas">Billede til kasse 1</h2>
+		<div class="block collapse first" id="first">
 			<div class="block__content kasse">
 				I'm the first content!
 			</div>
 		</div>
+
+	</div>
+
+		<button class="btn btn-primary btn__first" data-toggle="collapse" data-target=".collapse.first" data-text="Collapse" onclick="moveKasse()">
+			Læs mere om vores Lille kasse
+		</button>
+
+
 	</section>
 
 	<section class="scroll">

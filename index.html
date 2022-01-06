@@ -15,20 +15,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/9078a86c62.js" crossorigin="anonymous"></script>
 
+
+
 	<!-- <script src="https://cdn.tiny.cloud/1/y7etbb6fgqruwg5o86t8eo2wywvvdlu54udfhebfjweavmfg/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light ">
+<nav class="navbar navbar-expand-lg navbar-light">
 	<a class="navbar-brand text-winter" href="#">Moseholm Gård</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
 	<div class="collapse navbar-collapse" id="navbar">
-		<ul class="navbar-nav mr-auto">
+		<ul class="navbar-nav">
 			<li class="nav-item active">
 				<a class="nav-link text-winter" href="#kas1">Stor Kasse <span class="sr-only">(current)</span></a>
 			</li>
@@ -41,27 +43,35 @@
 			<li class="nav-item active">
 				<a class="nav-link text-winter" href="#kas4">Beauty Kasse <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link text-winter" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item active form-inline my-2 my-lg-0 ">
-				<a class="nav-link text-winter" href="login.php"> <i class="far fa-user "></i></a>
-			</li>
 
 		</ul>
+		<form class="d-flex">
+			<li class="nav-item active form-inline me-2">
+				<a class="nav-link text-winter me-2" href="login.php"> <i class="far fa-user "></i></a>
+			</li>
+		</form>
 	</div>
 </nav>
 
-<!--  formular:
-	 <form method="post">
-		<textarea id="mytextarea">Hello, World!</textarea>
-	</form>
-	-->
 
 	<section class="scroll">
 	<div class="kasse kasse1" id="kas1">
 		<h2>Billede til kasse 1</h2>
-	</div></section>
+
+
+	</div>
+
+		<button class="btn btn-primary btn__first" data-toggle="collapse" data-target=".collapse.first" data-text="Collapse">
+			Læs mere om vores Lille kasse
+		</button>
+
+		<div class="block collapse first">
+			<div class="block__content kasse">
+				I'm the first content!
+			</div>
+		</div>
+	</section>
+
 	<section class="scroll">
 	<div class="kasse kasse2" id="kas2">
 		<h2>Billede til kasse 2</h2>
@@ -76,12 +86,33 @@
 	</div>
 		<div class="bund">
 		</div>
-		<div class="footer">
+
+		<div class="some">
 
 			<i class="fab fa-facebook"></i>
 			<i class="fab fa-instagram"></i>
 			<i class="fab fa-linkedin-in"></i>
 			<i class="fab fa-youtube"></i>
+
+		</div>
+		<div class="list">
+
+			<p>|</p><p>Forside</p><p>|</p><p>Produkter</p><p>|</p><p>Om os</p><p>|</p><p>Log ind</p><p>|</p>
+
+		</div>
+		<div class="sam">
+
+			<p>Samarbejdspartnere</p>
+
+		</div>
+		<div class="list">
+
+			<p>Lorem</p><p>Ipsum</p><p>Dolor</p><p>Sit amet</p><p>Consectetur</p><p>Elito</p>
+
+		</div>
+		<div class="sam">
+
+			<p>cvr-nummer XXXXXXXX</p>
 
 		</div>
 	</section>

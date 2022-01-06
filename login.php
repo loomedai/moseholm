@@ -1,15 +1,13 @@
 <?php
 require "settings/init.php";
 
+session_start();
+
 if (isset($_POST['username']) && isset($_POST['password'])) {
-    function validate ($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
-    $username = validate($_POST['username']);
-    $password = validate($_POST['password']);
+
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     if (empty($username)) {
         header("Location: login.php?error=Brugernavn skal udfyldes");
@@ -20,30 +18,24 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         exit ();
 
     } else {
-        echo "valid input";
-    }
+        $bind = [":username" => $username,
+            ":password" => $password
+        ];
 
+        $sql = "SELECT * FROM users WHERE username=:username AND password=:password";
+
+        $user= $db ->sql( $sql, $bind, true)[0];
+
+        if (!empty($user)) {
+            $_SESSION['user'] = $user;
+            header("Location: log.php");
+            exit ();
+        }
+    }
 }
 else{ header("HTTP/1.1 401 Unauthorized");
 
-
 }
-/*
- $data["password"] = "$_POST";
-
-
-
-if($data["password"] == "") {
-    $sql = "SELECT * FROM users WHERE 1=1";
-    $bind = [":username" => $data["username"],
-        ":email" => $data["email"],
-        ":password" => $data["password"];
-
-} else {
-    header("HTTP/1.1 401 Unauthorized");
-    $error["errorMessage"] = "Brugernavn eller kodeord passer ikke <a href='login.php'>prøv igen.</a>";
-    echo json_encode($error);
-} */
 
 ?>
 
@@ -70,7 +62,7 @@ if($data["password"] == "") {
 </head>
 <body class="userBod vh-100 ">
 
-<form class="m-5 bg-gradient-primary" method="post" action="#" enctype="multipart/form-data">
+<form class="m-5 bg-gradient-primary" method="post" action="login.php" enctype="multipart/form-data">
 
 <h1 class="col-12 col-md-6 m-auto"">Login på din bruger</h1>
 <br>
@@ -80,13 +72,13 @@ if($data["password"] == "") {
 
     <div class="col-12 col-md-6 m-auto">
         <div class="form-group">
-            <input class="form-control text-primary" type="text" name="data[username]" id="" placeholder="Skriv dit brugernavn" value="">
+            <input class="form-control text-primary" type="text" name="username" id="" placeholder="Skriv dit brugernavn" value="">
         </div>
     </div>
 
     <div class="col-12 col-md-6 m-auto">
         <div class="form-group">
-            <input class="form-control text-primary" type="password" name="data[password]" id="" placeholder="Skriv dit kodeord" value="">
+            <input class="form-control text-primary" type="password" name="password" id="" placeholder="Skriv dit kodeord" value="">
         </div>
     </div>
 

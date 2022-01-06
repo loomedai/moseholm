@@ -135,10 +135,8 @@ h2 {
 }
 
 .fa-facebook{
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px;
+
 }
 
 .fa-instagram {
@@ -160,4 +158,11 @@ h2 {
 	padding-right: 9px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.fa-user{
+	float: right;
+	color: white;
+	display: flex;
+	justify-content: right;
 }

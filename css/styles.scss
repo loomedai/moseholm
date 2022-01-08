@@ -6,6 +6,10 @@ body {
 	font-family: "Helvetica";
 }
 
+.mobileLG{
+
+}
+
 
 // Source mixin
 
@@ -200,4 +204,12 @@ h2 {
 	float: right;
 	display: flex;
 	justify-content: right;
+}
+
+@media screen and (min-width:580px) {
+	.mobileLG{
+		display: none;
+
+	}
+
 }

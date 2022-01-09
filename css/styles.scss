@@ -35,7 +35,22 @@ p {
 }
 
 .navbar{
-	position: fixed;
+	position: absolute;
+}
+
+.SBwrapper {
+	display: flex;
+	background-image: url("../img/DeskLG.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#imgWrap{
+	width: 100%;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 
@@ -206,10 +221,4 @@ h2 {
 	justify-content: right;
 }
 
-@media screen and (min-width:580px) {
-	.mobileLG{
-		display: none;
 
-	}
-
-}

@@ -37,6 +37,28 @@ function moveKasse(){
 
 }
 
+    let actionMenu = document.getElementById( "action-menu" );
+    let isOpen = false;
+
+    actionMenu.addEventListener( "click", function () {
+
+        if ( isOpen ) {
+
+            document.getElementById( "sub-menu" ).className = "slideShut";
+            document.getElementById("action-menu").textContent = 'Læs mere om vores store kasse';
+            isOpen = false;
+
+        }
+        else {
+
+            document.getElementById( "sub-menu" ).className = "slideOpen";
+            document.getElementById("action-menu").textContent = 'læs mindre';
+            isOpen = true;
+
+        }
+
+    })
+
 
     $('.navbar a').on('click', function (e)
     {

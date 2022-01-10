@@ -3,7 +3,7 @@
 }
 
 body {
-	font-family: "Helvetica";
+	font-family: "Helvetica","sans-serif";
 }
 
 .mobileLG{
@@ -11,7 +11,10 @@ body {
 }
 
 
+// Source mixin
+
 h1, h2, h3, h4, h5, h6 {
+	font-family: Simplicity, "sans-serif";
 	margin: 0;
 	padding: 0;
 }
@@ -86,21 +89,23 @@ p {
 
 .SBwrapper {
 	display: flex;
+	flex-direction: column;
 	background-image: url("../img/DeskLG.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-#imgWrap{
+.imgWrap{
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: auto;
 }
 
-
+#mere {display: none;}
 
 
 img {
@@ -123,10 +128,21 @@ img {
 
 }
 
+.laesmindre {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50vh;
+}
+
 h2 {
 	padding: 10px;
 	background: rgba(0, 0, 0, 0.32);
 	border-radius: 16px;
+}
+.kasBes{
+	padding: 2rem;
 }
 
 .kasse1 {
@@ -260,3 +276,33 @@ h2 {
 }
 
 
+body {
+	padding: 0;
+	margin: 0;
+}
+#action-menu {
+	position: relative;
+	padding: 10px 4px 10px 4px;
+	background-color: #63754C;
+	cursor: pointer;
+}
+#sub-menu {
+	padding-left: 2rem;
+	overflow: hidden;
+	height: 300px;
+	background-color: #A8C288;
+}
+.slideOpen {
+	animation: slideOpen 1s forwards;
+}
+.slideShut{
+	animation: slideShut 1s forwards;
+}
+@keyframes slideOpen {
+	0% { height: 0px; }
+	100% { height: 300px; }
+}
+@keyframes slideShut {
+	0% { height: 300px; }
+	100% { height: 0px; }
+}

@@ -8,14 +8,13 @@ body{
 .container h2{
     width: 100%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
-    color: #0c5460;
+    color: #56b766;
 }
 
 .container h1{
     font-size: 160px;
+    text-align: center;
 }
 .container h2{
 

@@ -25,7 +25,8 @@
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
 	<a class="navbar-brand text-winter" href="#">
-		<h1> Moseholm Gård </h1> </a>
+		<img src="img/log.png">
+	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -53,12 +54,52 @@
 
 		</ul>
 		<form class="d-flex">
-			<li class="nav-item active form-inline me-2">
-				<a class="nav-link text-winter me-2" href="login.php"> <i class="far fa-user "></i></a>
+			<li type="button" class="nav-item active form-inline me-2" data-toggle="modal" data-target="#Modal">
+				<i class="far fa-user text-winter"></i>
 			</li>
 		</form>
 	</div>
 </nav>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close ml-auto mr-2" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-header">
+				<h3 class="modal-title text-primary" id="ModalLabel">Log ind</h3>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button " class="btn" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
+				<button type="button" class="btn btn-primary" id="btn2">Log ind</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="Modal2Label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close ml-auto mr-2" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-header">
+				<h3 class="modal-title text-primary" id="Modal2Label">Opret bruger</h3>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button " class="btn" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
+				<button type="button" class="btn btn-primary" id="btn4">Opret bruger</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <section class="scroll">

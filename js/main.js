@@ -1,5 +1,8 @@
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})
 
-    $(function ()
+$(function ()
     {
     $.scrollify({
         section : '.scroll',

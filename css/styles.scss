@@ -39,9 +39,49 @@ p {
 	width: 100%;
 }
 
+.modal-content{
+	border-radius: 0px;
+}
+
+.modal-header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal-body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#btn1{
+	border-color: #0b2e13;
+	border-radius: 25px;
+}
+#btn2{
+	border-radius: 25px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+#btn3{
+	border-color: #0b2e13;
+	border-radius: 25px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+#btn4{
+	border-radius: 25px;
+}
+
 #link{
-	margin-left: 2vh;
-	margin-right: 2vh;
+	margin-left: 1vh;
+	margin-right: 1vh;
 }
 
 .SBwrapper {

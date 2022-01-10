@@ -3,21 +3,23 @@ body{
     padding: 0;
     font-family: Simplicity;
     min-height: 100vh;
+    background: rgba(213, 236, 204, 0.77);
 }
 
 .container h2{
     width: 100%;
     position: absolute;
     text-align: center;
-    color: #56b766;
+    color: #b456b7;
 
 }
 
 .container h1{
     font-size: 160px;
     text-align: center;
-
 }
-.container h2{
+
+.container{
+    text-align: center;
 
 }

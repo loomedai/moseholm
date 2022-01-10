@@ -31,6 +31,18 @@ p {
 	padding: 0;
 }
 
+.navbar{
+	position: fixed;
+}
+
+.sticky-top{
+	width: 100%;
+}
+
+#link{
+	margin-left: 2vh;
+	margin-right: 2vh;
+}
 
 .SBwrapper {
 	display: flex;

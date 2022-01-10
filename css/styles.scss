@@ -14,7 +14,6 @@ body {
 // Source mixin
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Simplicity;
 	margin: 0;
 	padding: 0;
 }
@@ -34,9 +33,6 @@ p {
 	padding: 0;
 }
 
-.navbar{
-	position: absolute;
-}
 
 .SBwrapper {
 	display: flex;
@@ -77,21 +73,10 @@ img {
 
 }
 
-.laesmindre {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 50vh;
-}
-
 h2 {
 	padding: 10px;
 	background: rgba(0, 0, 0, 0.32);
 	border-radius: 16px;
-}
-.kasBes{
-	padding: 2rem;
 }
 
 .kasse1 {

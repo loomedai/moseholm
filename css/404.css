@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Simplicity;
+    min-height: 100vh;
+    background: rgb(51, 56, 71);
+}
+
+.container h2{
+    width: 100%;
+    text-align: center;
+    color: #dedede;
+}
+
+.container1{
+    text-align: center;
+}
+a {
+    color: #dedede;
+    text-decoration: none;
+}
+a:hover, a:focus{
+    color: #dedede;
+    text-decoration: underline;
+}
+
+.containerimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+

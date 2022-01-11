@@ -19,6 +19,7 @@ $(function ()
 
             document.getElementById( "sub-menu" ).className = "slideShut";
             document.getElementById("action-menu").textContent = 'Læs mere om vores store kasse';
+            document.getElementById("SBWrapper").classList.add("vh-100");
             isOpen = false;
 
         }
@@ -26,6 +27,7 @@ $(function ()
 
             document.getElementById( "sub-menu" ).className = "slideOpen";
             document.getElementById("action-menu").textContent = 'læs mindre';
+            document.getElementById("SBWrapper").classList.remove("vh-100");
             isOpen = true;
 
         }

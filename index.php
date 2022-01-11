@@ -81,9 +81,6 @@ if(!empty($_POST["data"])){
     <link rel="icon" href="https://i.talpix.lt/zz67A.png">
 
 
-
-    <!-- <script src="https://cdn.tiny.cloud/1/y7etbb6fgqruwg5o86t8eo2wywvvdlu54udfhebfjweavmfg/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
-
 </head>
 
 <body>
@@ -164,7 +161,7 @@ if(!empty($_POST["data"])){
 
             </div>
             <div class="modal-footer">
-                <button type="button " class="btn" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
                 <button type="button" class="btn btn-primary" id="btn2">Log ind</button>
             </div>
         </div>
@@ -237,7 +234,7 @@ if(!empty($_POST["data"])){
                             <div class="form-group">
                                 <select class="form-control text-primary" name=data[box]">
                                     <option value="">Vælg boks</option>
-                                    <option value="">Stor Boks</option>
+                                    <option value="Stor Boks">Stor Boks</option>
                                     <option value="">Lille Boks</option>
                                     <option value="">Bland Selv</option>
                                     <option value="">Beauty Boks</option>
@@ -263,7 +260,7 @@ if(!empty($_POST["data"])){
 
             </div>
             <div class="modal-footer">
-                <button type="button " class="btn" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
                 <button type="button" class="btn btn-primary" id="btn4">Opret bruger</button>
             </div>
         </div>
@@ -272,7 +269,7 @@ if(!empty($_POST["data"])){
 
 
 <section class="scroll" id="kas1">
-    <div class="SBwrapper vh-100 bg-primary">
+    <div id="SBWrapper" class="SBwrapper vh-100 bg-primary">
         <div id="sub-menu">
             <p class="kasBes text-winter font-weight-bold">
                 Pris: 249 kr <br>

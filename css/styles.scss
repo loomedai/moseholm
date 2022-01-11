@@ -201,7 +201,11 @@ h2 {
 .m-5 {
 	margin:50px !important;
 }
-
+.prod{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
 .userBod {
 	color: #f8f8f8;
 	background-image: linear-gradient(to bottom right, #63754C, #A8C288);

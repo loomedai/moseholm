@@ -152,17 +152,13 @@ if(!empty($_POST["data"])){
                     </div>
 
 
-                    <div class="col-12 col-md-3 m-auto ">
-
-                        <button class="form-control btn btn-primary" type="submit" name="submit"  id="login" value="Login">Login</button>
+                    <div class="m-auto d-flex">
+                        <button class="btn btn-winter" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
+                        <button class="btn btn-primary" type="submit" name="submit"  id="login" value="Login">Login</button>
                     </div>
 
                 </form>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
-                <button type="button" class="btn btn-primary" id="btn2">Log ind</button>
             </div>
         </div>
     </div>
@@ -235,22 +231,16 @@ if(!empty($_POST["data"])){
                                 <select class="form-control text-primary" name=data[box]">
                                     <option value="">Vælg boks</option>
                                     <option value="Stor Boks">Stor Boks</option>
-                                    <option value="">Lille Boks</option>
-                                    <option value="">Bland Selv</option>
-                                    <option value="">Beauty Boks</option>
+                                    <option value="Lille boks">Lille Boks</option>
+                                    <option value="Pluk selv">Pluk Selv</option>
+                                    <option value="Beauty boks">Beauty Boks</option>
                                 </select>
-                                <!--
-                                <input class="form-control" type="text" name="data[box]" id="boxDrop" placeholder="Vælg box" value=""> -->
                             </div>
                         </div>
 
-
                         <div class="col-12 col-md-3 offset-md-3">
 
-
                             <button class="form-control btn btn-primary" type="submit" id="btnSubmit">Opret bruger</button>
-
-
 
                         </div>
 
@@ -261,7 +251,7 @@ if(!empty($_POST["data"])){
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
-                <button type="button" class="btn btn-primary" id="btn4">Opret bruger</button>
+                <button class="form-control btn btn-primary" type="submit" id="btnSubmit">Opret bruger</button>
             </div>
         </div>
     </div>

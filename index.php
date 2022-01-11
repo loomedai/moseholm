@@ -341,9 +341,9 @@ if(!empty($_POST["data"])){
 
 
 <script>
-    alert("Vi bruger cookies og registrere statistik om brugen af vores hjemmeside fordi vi gerne vil gøre den bedre og mere målrettet. Ved at klikke 'ok' accepterer du brugen af cookies. og giver samtykke for følgende domæner: \n" +
-        "\n" +
-        "Moseholmgaard.dk, Cookiepolitikken er sidst opdateret d. 11.01.2022.")
+    // alert("Vi bruger cookies og registrere statistik om brugen af vores hjemmeside fordi vi gerne vil gøre den bedre og mere målrettet. Ved at klikke 'ok' accepterer du brugen af cookies. og giver samtykke for følgende domæner: \n" +
+    //     "\n" +
+    //     "Moseholmgaard.dk, Cookiepolitikken er sidst opdateret d. 11.01.2022.")
 </script>
 
 

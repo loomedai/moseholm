@@ -73,7 +73,7 @@ if(!empty($_POST["data"])){
     <meta name="copyright" content="Information om copyright">
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.scss" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/9078a86c62.js" crossorigin="anonymous"></script>
@@ -86,17 +86,17 @@ if(!empty($_POST["data"])){
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top">
     <a class="navbar-brand text-winter" href="#">
         <img src="img/log.png">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-winter"></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto align-items-end">
             <li class="nav-item active" >
                 <a class="nav-link text-winter" href="#kas1">Stor Kasse <span class="sr-only">(current)</span></a>
             </li>
@@ -117,11 +117,11 @@ if(!empty($_POST["data"])){
             </li>
 
         </ul>
-        <form class="d-flex">
+        <ul class=" navbar-nav align-items-end">
             <li type="button" class="nav-item active form-inline me-2" data-toggle="modal" data-target="#Modal">
-                <i class="far fa-user text-winter"></i>
+                <i class="far fa-user text-winter text-right"></i>
             </li>
-        </form>
+        </ul>
     </div>
 </nav>
 
@@ -284,6 +284,24 @@ if(!empty($_POST["data"])){
 
 
 </section>
+
+<div class="container bg-winter cookie" id="gone">
+
+    <p class="cookie-text">
+        Vi bruger cookies
+        <button onclick="remove()" class="btn-dark">Acceptere</button>
+    </p>
+
+    <script>
+        function remove(){
+            const myDiv = document.getElementById("gone")
+            const parent = myDiv.parentNode;
+            parent.removeChild(myDiv)
+            console.log("do something");
+        }
+    </script>
+
+</div>
 
 <section class="scroll" id="kas2">
     <div class="kasse kasse2">

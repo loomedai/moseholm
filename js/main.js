@@ -33,8 +33,8 @@ $(function ()
     })
 
 
-    $('.navbar a').on('click', function (e)
-    {
+$('.navbar').on('click', function (e)
+  {
     if(this.hash !==''){
     e.preventDefault();
     const hash = this.hash;

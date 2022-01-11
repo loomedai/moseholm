@@ -2,16 +2,16 @@
 <html lang="da">
 <head>
 	<meta charset="utf-8">
-	
+
 	<title>Moseholm gård</title>
-	
+
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
 	<meta name="copyright" content="Information om copyright">
-	
+
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/9078a86c62.js" crossorigin="anonymous"></script>
 
@@ -24,41 +24,84 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-light">
-	<a class="navbar-brand text-winter" href="#"><h1> Moseholm Gård </h1> </a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+	<a class="navbar-brand text-winter" href="#">
+		<img src="img/log.png">
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
 	<div class="collapse navbar-collapse" id="navbar">
-		<ul class="navbar-nav">
-			<li class="nav-item active">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active" id="link">
 				<a class="nav-link text-winter" href="#kas1">Stor Kasse <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
+			<li class="nav-item active" id="link">
 				<a class="nav-link text-winter" href="#kas2">Lille Kasse <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
+			<li class="nav-item active" id="link">
 				<a class="nav-link text-winter" href="#kas3">Pluk Selv <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link text-winter" href="#kas4">Beauty Kasse <span class="sr-only">(current)</span></a>
+			<li class="nav-item active" id="link">
+				<a class="nav-link text-winter" href="#kas4">Hudpleje Kasse <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link text-winter" href="produkt.html">Beauty produkter<span class="sr-only">(current)</span></a>
+			<li class="nav-item active" id="link">
+				<a class="nav-link text-winter" href="#prod">Produkter <span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item active">
-				<a class="nav-link text-winter" href="omos.html">Gården<span class="sr-only">(current)</span></a>
+			<li class="nav-item active" id="link">
+				<a class="nav-link text-winter" href="#Går">Gården <span class="sr-only">(current)</span></a>
 			</li>
 
 		</ul>
 		<form class="d-flex">
-			<li class="nav-item active form-inline me-2">
-				<a class="nav-link text-winter me-2" href="login.php"> <i class="far fa-user "></i></a>
+			<li type="button" class="nav-item active form-inline me-2" data-toggle="modal" data-target="#Modal">
+				<i class="far fa-user text-winter"></i>
 			</li>
 		</form>
 	</div>
 </nav>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close ml-auto mr-2" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-header">
+				<h3 class="modal-title text-primary" id="ModalLabel">Log ind</h3>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button " class="btn" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
+				<button type="button" class="btn btn-primary" id="btn2">Log ind</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="Modal2Label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close ml-auto mr-2" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-header">
+				<h3 class="modal-title text-primary" id="Modal2Label">Opret bruger</h3>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button " class="btn" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
+				<button type="button" class="btn btn-primary" id="btn4">Opret bruger</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <section class="scroll">
@@ -88,50 +131,50 @@
 
 </section>
 
-	<section class="scroll">
+<section class="scroll">
 	<div class="kasse kasse2">
 		<h2 class="text-winter">Billede til kasse 2</h2>
 	</div></section>
-	<section class="scroll">
+<section class="scroll">
 	<div class="kasse kasse3">
 		<h2 class="text-winter">Billede til pluk selv kassen</h2>
 	</div></section>
-	<section class="scroll">
+<section class="scroll">
 	<div class="kasse kasse4">
 		<h2 class="text-winter">Billede til beauty</h2>
 	</div>
-		<div class="bund">
-		</div>
+	<div class="bund">
+	</div>
 
-		<div class="some">
+	<div class="some">
 
-			<i class="fab fa-facebook"></i>
-			<i class="fab fa-instagram"></i>
-			<i class="fab fa-linkedin-in"></i>
-			<i class="fab fa-youtube"></i>
+		<i class="fab fa-facebook"></i>
+		<i class="fab fa-instagram"></i>
+		<i class="fab fa-linkedin-in"></i>
+		<i class="fab fa-youtube"></i>
 
-		</div>
-		<div class="list">
+	</div>
+	<div class="list">
 
-			<p class="pF">|</p><p class="pF">Forside</p><p class="pF">|</p><p class="pF">Produkter</p><p class="pF">|</p><p class="pF">Om os</p><p class="pF">|</p><p class="pF">Log ind</p><p class="pF">|</p>
+		<p class="pF">|</p><p class="pF">Forside</p><p class="pF">|</p><p class="pF">Produkter</p><p class="pF">|</p><p class="pF">Om os</p><p class="pF">|</p><p class="pF">Log ind</p><p class="pF">|</p>
 
-		</div>
-		<div class="sam">
+	</div>
+	<div class="sam">
 
-			<p class="pF">Samarbejdspartnere</p>
+		<p class="pF">Samarbejdspartnere</p>
 
-		</div>
-		<div class="list">
+	</div>
+	<div class="list">
 
-			<p class="pF">Lorem</p><p class="pF">Ipsum</p><p class="pF">Dolor</p><p class="pF">Sit amet</p><p class="pF">Consectetur</p><p class="pF">Elito</p>
+		<p class="pF">Lorem</p><p class="pF">Ipsum</p><p class="pF">Dolor</p><p class="pF">Sit amet</p><p class="pF">Consectetur</p><p class="pF">Elito</p>
 
-		</div>
-		<div class="sam">
+	</div>
+	<div class="sam">
 
-			<p class="pF">cvr-nummer XXXXXXXX</p>
+		<p class="pF">cvr-nummer XXXXXXXX</p>
 
-		</div>
-	</section>
+	</div>
+</section>
 
 
 

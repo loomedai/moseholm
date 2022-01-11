@@ -78,6 +78,8 @@ if(!empty($_POST["data"])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/9078a86c62.js" crossorigin="anonymous"></script>
 
+    <link rel="icon" href="https://i.talpix.lt/zz67A.png">
+
 
 
     <!-- <script src="https://cdn.tiny.cloud/1/y7etbb6fgqruwg5o86t8eo2wywvvdlu54udfhebfjweavmfg/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->

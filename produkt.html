@@ -6,6 +6,7 @@
 
 <!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
 <head>
+    <link rel="icon" href="https://i.talpix.lt/zz67A.png">
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
 
@@ -23,13 +24,47 @@
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <nav class="navbar sticky-top bg-white justify-content-center">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo_3.png" width="50" class="d-inline-block align-top" alt="">
-        </a>
-    </nav>
-</head>
 
+    <script src="https://kit.fontawesome.com/9078a86c62.js" crossorigin="anonymous"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+    <a class="navbar-brand text-winter" href="#">
+        <img src="img/nav%20logo%20grøn.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active" >
+                <a class="nav-link text-primary" href="index.html">Stor Kasse <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-primary" href="index.html#2">Lille Kasse <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-primary" href="index.html#3">Pluk Selv <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-primary" href="index.html#4">Hudpleje Kasse <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-primary" href="produkt.html">Produkter <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-primary" href="omos.html">Gården <span class="sr-only">(current)</span></a>
+            </li>
+
+        </ul>
+        <form class="d-flex">
+            <li type="button" class="nav-item active form-inline me-2" data-toggle="modal" data-target="#Modal">
+                <i class="far fa-user text-primary"></i>
+            </li>
+        </form>
+    </div>
+</nav>
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 

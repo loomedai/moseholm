@@ -38,6 +38,23 @@ p {
 	position: fixed;
 }
 
+.fas {
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.navbar-toggler {
+	padding-right: 10px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: rgb(255,102,203);
+}
+
 .sticky-top{
 	width: 100%;
 }
@@ -191,6 +208,25 @@ h2 {
 	height: 5vh;
 	background-color: black;
 }
+
+
+.cookie{
+	max-width: 210px;
+	font-size: 13px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1030;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+.cookie-text{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
 .pF{
 	color: #f8f8f8;
 	padding-right: 10px;

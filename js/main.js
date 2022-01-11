@@ -1,3 +1,5 @@
+
+
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
 })
@@ -45,5 +47,6 @@ $('.navbar a').on('click', function (e)
 },500);
 }
 })
+
 
 

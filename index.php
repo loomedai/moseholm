@@ -226,7 +226,7 @@ if(!empty($_POST["data"])){
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-3">
                             <div class="form-group">
                                 <select class="form-control text-primary" name=data[box]">
                                     <option value="">Vælg boks</option>
@@ -238,9 +238,10 @@ if(!empty($_POST["data"])){
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-3 offset-md-3">
+                        <div class="col-12 col-md-3 offset-md-3 d-flex">
 
-                            <button class="form-control btn btn-primary" type="submit" id="btnSubmit">Opret bruger</button>
+                            <button class="form-control btn btn-primary m-auto" type="submit" id="btnSubmit">Opret bruger</button>
+                            <button type="button" class="btn m-auto" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
 
                         </div>
 
@@ -248,10 +249,6 @@ if(!empty($_POST["data"])){
                 </form>
 
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
-                <button class="form-control btn btn-primary" type="submit" id="btnSubmit">Opret bruger</button>
             </div>
         </div>
     </div>
@@ -268,9 +265,10 @@ if(!empty($_POST["data"])){
                 Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
                 Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
             </p>
-            <a href="userformular.php">
-                <button class="btn btn-primary btnfirst">Bestil kassen</button>
-            </a>
+
+
+                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+
         </div>
 
         <div class="vh-100 imgWrap" id="frKas">

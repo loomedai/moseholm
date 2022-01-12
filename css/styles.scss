@@ -99,21 +99,28 @@ p {
 	margin-right: 1vh;
 }
 
-.SBwrapper {
+.SBwrapper, .LBWrapper, .PSWrapper, .BeaWrapper{
 	display: flex;
 	flex-direction: column;
-	background-image: url("../img/DeskLG.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
+.SBwrapper{
+	background-image: url("../img/DeskLG.png");
+}
 .LBWrapper{
-	display: flex;
-	flex-direction: column;
 	background-image: url("../img/DeskDG.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+}
+.PSWrapper{
+	background-image: url("../img/DeskBlue.png");
+}
+.BeaWrapper{
+	background-image: url("img/DeskBrown.png");
+}
+
+.DeskBoxS{
+	max-height: 571px;
 }
 
 .imgWrap{
@@ -184,7 +191,7 @@ h2 {
 
 .bund{
 	width: 100%;
-	height: 50vh;
+	height: 30vh;
 	background-color: white;
 }
 .some{
@@ -335,12 +342,7 @@ body {
 	height: 0px;
 	background-color: #A8C288;
 }
-.slideOpen {
-	animation: slideOpen 1s forwards;
-}
-.slideShut{
-	animation: slideShut 1s forwards;
-}
+
 
 .payment{
 	max-width: 500px;
@@ -365,6 +367,12 @@ body {
 	border-radius: 10px;
 }
 
+.slideOpen {
+	animation: slideOpen 1s forwards;
+}
+.slideShut{
+	animation: slideShut 1s forwards;
+}
 @keyframes slideOpen {
 	0% { height: 0px; }
 	100% { height: 450px; }

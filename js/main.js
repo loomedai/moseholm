@@ -4,12 +4,12 @@ $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
 })
 
-$(function ()
-    {
-    $.scrollify({
-        section : '.scroll',
-    });
-});
+// $(function ()
+//     {
+//     $.scrollify({
+//         section : '.scroll',
+//     });
+// });
 
 
     let actionMenu = document.getElementById( "action-menu" );
@@ -37,16 +37,16 @@ $(function ()
     })
 
 
-$('.navbar a').on('click', function (e)
-  {
-    if(this.hash !==''){
-    e.preventDefault();
-    const hash = this.hash;
-    $('html, body').animate({
-    scrollTop: $(hash).offset().top
-},500);
-}
-})
+// $('.navbar a').on('click', function (e)
+//   {
+//     if(this.hash !==''){
+//     e.preventDefault();
+//     const hash = this.hash;
+//     $('html, body').animate({
+//     scrollTop: $(hash).offset().top
+// },500);
+// }
+// })
 
 
 

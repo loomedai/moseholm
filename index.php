@@ -273,7 +273,8 @@ if(!empty($_POST["data"])){
 
         <div class="imgWrap" id="frKas">
 
-            <img class="DeskBoxS" src="img/boxStork.png">
+            <img class="imgStorBox " src="img/StorKasse-lille.png" >
+            <img class="imgStorBox2" src="img/boxStork.png">
             <button class="btn btn-primary btnfirst" id="action-menu">
                 Læs mere om vores Store kasse
             </button>
@@ -351,6 +352,7 @@ if(!empty($_POST["data"])){
 
     </div>
 </section>
+
 <section class="scroll" id="kas4">
     <div id="SBWrapper" class="BeaWrapper vh-100 bg-beauty">
         <div id="sub-menu">
@@ -377,7 +379,8 @@ if(!empty($_POST["data"])){
         </div>
 
     </div>
-
+</section>
+<section class="scroll" id="kas5">
     <div class="bund">
     </div>
 

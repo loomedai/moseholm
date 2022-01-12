@@ -182,7 +182,7 @@ if(!empty($_POST["data"])){
 
                         <div class="col-12 col-md-6">
                             <div class="form-group">
-                                <input class="form-control text-primary" type="text" name="data[username]" id="udername" placeholder="Brugernavn" value="">
+                                <input class="form-control text-primary" type="text" name="data[username]" id="username" placeholder="Brugernavn" value="">
                             </div>
                         </div>
 
@@ -278,10 +278,10 @@ if(!empty($_POST["data"])){
 <!--            <img class="imgStorBox" src="img/boxStorKasse-lille.png" >-->
             <img src="img/TEST.png">
             <div>
-                 <button class="btn btn-primary btnfirst" id="action-menu">
+                 <button class="btn btn-light text-winter btnfirst" id="action-menu">
                 Læs mere
                 </button>
-                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+                <button class="btn btn-light text-winter btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
             </div>
         </div>
 
@@ -347,10 +347,10 @@ if(!empty($_POST["data"])){
             <img class="imgStorBox" src="img/boxBlandSelv-lille.png" >
             <img class="imgStorBox2" src="img/boxBlandselvDesk.png">
             <div>
-                <button class="btn btn-primary btnfirst" id="action-menu">
+                <button class="btn btn-dark btnfirst" id="action-menu">
                     Læs mere
                 </button>
-                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+                <button class="btn btn-dark btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
             </div>
 
         </div>
@@ -376,10 +376,10 @@ if(!empty($_POST["data"])){
             <img class="imgStorBox" src="img/boxBeautyPic-lille.png" >
             <img class="imgStorBox2" src="img/boxBeautyPic.png">
             <div>
-                <button class="btn btn-primary btnfirst" id="action-menu">
+                <button class="btn btn-beauty btnfirst" id="action-menu">
                     Læs mere
                 </button>
-                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+                <button class="btn btn-beauty btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
             </div>
 
         </div>

@@ -323,14 +323,61 @@ if(!empty($_POST["data"])){
 
     </div>
 </section>
+
 <section class="scroll" id="kas3">
-    <div class="kasse kasse3">
-        <h2 class="text-winter">Billede til pluk selv kassen</h2>
-    </div></section>
-<section class="scroll" id="kas4">
-    <div class="kasse kasse4">
-        <h2 class="text-winter">Billede til beauty</h2>
+    <div id="SBWrapper" class="PSWrapper vh-100 bg-dark">
+        <div id="sub-menu">
+            <p class="kasBes text-winter font-weight-bold">
+                Pris: 249 kr <br>
+            </p>
+            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
+                Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
+                Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
+            </p>
+
+
+            <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+
+        </div>
+
+        <div class="vh-100 imgWrap" id="frKas">
+
+            <img class="DeskBoxS" src="img/boxBlandselvDesk.png">
+            <button class="btn btn-primary btnfirst" id="action-menu">
+                Læs mere om vores Store kasse
+            </button>
+
+        </div>
+
     </div>
+</section>
+<section class="scroll" id="kas4">
+    <div id="SBWrapper" class="BeaWrapper vh-100 bg-beauty">
+        <div id="sub-menu">
+            <p class="kasBes text-winter font-weight-bold">
+                Pris: 249 kr <br>
+            </p>
+            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
+                Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
+                Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
+            </p>
+
+
+            <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+
+        </div>
+
+        <div class="vh-100 imgWrap" id="frKas">
+
+            <img class="DeskBoxS" src="img/BeautyPic.png">
+            <button class="btn btn-primary btnfirst" id="action-menu">
+                Læs mere om vores Store kasse
+            </button>
+
+        </div>
+
+    </div>
+
     <div class="bund">
     </div>
 

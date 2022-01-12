@@ -88,7 +88,8 @@ if(!empty($_POST["data"])){
 
 <nav class="navbar navbar-expand-lg sticky-top">
     <a class="navbar-brand text-winter" href="#">
-        <img src="img/log.png">
+        <img src="img/log.png" class="logobig">
+        <img src="img/logsmall.png" class="logosmall">
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">

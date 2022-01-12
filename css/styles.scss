@@ -386,3 +386,18 @@ body {
 	}
 
 }
+
+@media (max-width:357px){
+
+	.logobig {
+		display: none;
+	}
+
+}
+
+@media (min-width: 357px){
+
+	.logosmall {
+		display: none;
+	}
+}

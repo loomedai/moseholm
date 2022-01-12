@@ -99,16 +99,16 @@ if(!empty($_POST["data"])){
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto align-items-end">
             <li class="nav-item active" >
-                <a class="nav-link text-winter" href="#kas1">Stor Kasse <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas1">Stor kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-winter" href="#kas2">Lille Kasse <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas2">Lille kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-winter" href="#kas3">Pluk Selv <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas3">Pluk selv <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-winter" href="#kas4">Hudpleje Kasse <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas4">Hudpleje kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link text-winter" href="produkt.html">Produkter <span class="sr-only">(current)</span></a>
@@ -231,10 +231,10 @@ if(!empty($_POST["data"])){
                             <div class="form-group">
                                 <select class="form-control text-primary" name=data[box]">
                                     <option value="">Vælg boks</option>
-                                    <option value="Stor Boks">Stor Boks</option>
-                                    <option value="Lille boks">Lille Boks</option>
-                                    <option value="Pluk selv">Pluk Selv</option>
-                                    <option value="Beauty boks">Beauty Boks</option>
+                                    <option value="Stor Boks">Stor boks</option>
+                                    <option value="Lille boks">Lille boks</option>
+                                    <option value="Pluk selv">Pluk selv</option>
+                                    <option value="Beauty boks">Beauty boks</option>
                                 </select>
                             </div>
                         </div>
@@ -261,11 +261,14 @@ if(!empty($_POST["data"])){
         <div id="sub-menu">
             <div class="kasBes">
             <p class="text-winter font-weight-bold">
-                Pris: 249 kr </p>
+                Pris: 349 kr </p>
             <p class="text-winter">
-                Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
-                Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
-                Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
+                Grønt og lidt luxus! - Særlig god til mad-nørderi.
+                <br>
+                I denne kasse finder du ud over ca 5 kg. grøntsager (minimum 5 forskellige varianter) også hjemmelavede økologiske produkter.
+                Moseholm producere selv lækre spislige specialiteter men samarbejder også med bønder, smags-entusiaster og sylte-specialister på vestsjælland.
+                Produkterne kan derfor være alt fra mamelade, sirup, most og meget mere - besøg evt.
+                vores gårdbutik og hør nærmere om udvalget du kan møde i denne kasse.
             </p>
             </div>
         </div>

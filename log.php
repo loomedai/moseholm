@@ -57,16 +57,16 @@ $user = $_SESSION['user'];
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto align-items-end">
             <li class="nav-item active" >
-                <a class="nav-link text-winter" href="#kas1">Stor Kasse <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas1">Stor kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-winter" href="#kas2">Lille Kasse <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas2">Lille kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-winter" href="#kas3">Pluk Selv <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas3">Pluk selv <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-winter" href="#kas4">Hudpleje Kasse <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas4">Hudpleje kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link text-winter" href="produkt.html">Produkter <span class="sr-only">(current)</span></a>

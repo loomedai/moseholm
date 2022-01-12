@@ -108,7 +108,7 @@ if(!empty($_POST["data"])){
                 <a class="nav-link text-winter" href="#kas3">Pluk selv <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-winter" href="#kas4">Hudpleje kasse <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas4">Helse kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link text-winter" href="produkt.html">Produkter <span class="sr-only">(current)</span></a>
@@ -142,13 +142,13 @@ if(!empty($_POST["data"])){
 
                     <div class="col-12 col-md-6 m-auto">
                         <div class="form-group">
-                            <input class="form-control text-primary" type="text" name="username" id="" placeholder="Skriv dit brugernavn" value="">
+                            <input class="form-control text-primary" type="text" name="username" placeholder="Skriv dit brugernavn" value="">
                         </div>
                     </div>
 
                     <div class="col-12 col-md-6 m-auto">
                         <div class="form-group">
-                            <input class="form-control text-primary" type="password" name="password" id="" placeholder="Skriv dit kodeord" value="">
+                            <input class="form-control text-primary" type="password" name="password" placeholder="Skriv dit kodeord" value="">
                         </div>
                     </div>
 

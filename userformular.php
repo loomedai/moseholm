@@ -19,7 +19,7 @@ if(!empty($_POST["data"])){
     ];
 
     $db ->sql( $sql, $bind, false);
-    echo "Din bruger er nu oprettet, og du kan forvente din første box den kommende lørdag. <a href='index.html'>Tilmeld en ny box.</a>";
+    echo "Din bruger er nu oprettet, og du kan forvente din første box den kommende lørdag. <a href='index.php'>Gå tilbage til forsiden.</a>";
     exit;
 }
 ?>

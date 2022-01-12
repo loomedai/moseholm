@@ -140,13 +140,13 @@ if(!empty($_POST["data"])){
                 <form class="m-5 bg-gradient-primary" method="post" action="login.php" enctype="multipart/form-data">
 
 
-                    <div class="col-12 col-md-6 m-auto">
+                    <div class="m-auto">
                         <div class="form-group">
                             <input class="form-control text-primary" type="text" name="username" placeholder="Skriv dit brugernavn" value="">
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 m-auto">
+                    <div class="m-auto">
                         <div class="form-group">
                             <input class="form-control text-primary" type="password" name="password" placeholder="Skriv dit kodeord" value="">
                         </div>

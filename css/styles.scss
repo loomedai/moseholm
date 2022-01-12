@@ -105,22 +105,53 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-position: left;
+
 }
 .SBwrapper{
 	background-image: url("../img/DeskLGtxt.png");
-	background-position: left;
 }
 .LBWrapper{
 	background-image: url("../img/DeskDGtxt.png");
-	background-position: left;
 }
 .PSWrapper{
 	background-image: url("../img/DeskBluetxt.png");
-	background-position: left;
 }
+
 .BeaWrapper{
 	background-image: url("../img/DeskBrowntxt.png");
-	background-position: left;
+}
+
+@media (max-width: 810px){
+	.SBwrapper{
+		background-image: url("../img/mobile_lightgreen.png");
+	}
+	.LBWrapper{
+		background-image: url("../img/mobile_darkgreen.png");
+	}
+	.PSWrapper{
+		background-image: url("../img/mobile_blue.png");
+	}
+
+	.BeaWrapper{
+		background-image: url("../img/mobile_brown.png");
+	}
+}
+
+@media (max-width: 1235px){
+	.SBwrapper{
+		background-image: url("../img/middleLG.png");
+	}
+	.LBWrapper{
+		background-image: url("../img/middleDG.png");
+	}
+	.PSWrapper{
+		background-image: url("../img/middleBlue.png");
+	}
+
+	.BeaWrapper{
+		background-image: url("../img/middleBrown.png");
+	}
 }
 
 .imgWrap{

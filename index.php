@@ -267,18 +267,19 @@ if(!empty($_POST["data"])){
                 Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
                 Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
             </p>
-                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
             </div>
         </div>
 
         <div class="imgWrap" id="frKas">
 
-            <img class="imgStorBox" src="img/StorKasse-lille.png" >
+            <img class="imgStorBox " src="img/boxStorKasse-lille.png" >
             <img class="imgStorBox2" src="img/boxStork.png">
-            <button class="btn btn-primary btnfirst" id="action-menu">
+            <div>
+                 <button class="btn btn-primary btnfirst" id="action-menu">
                 Læs mere om vores Store kasse
-            </button>
-
+                </button>
+                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+            </div>
         </div>
 
     </div>
@@ -413,9 +414,6 @@ if(!empty($_POST["data"])){
 
     </div>
 </section>
-
-
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

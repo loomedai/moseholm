@@ -20,7 +20,7 @@ $(function ()
         if ( isOpen ) {
 
             document.getElementById( "sub-menu" ).className = "slideShut";
-            document.getElementById("action-menu").textContent = 'Læs mere om vores store kasse';
+            document.getElementById("action-menu").textContent = 'Læs mere';
             document.getElementById("SBWrapper").classList.add("vh-100");
             isOpen = false;
 

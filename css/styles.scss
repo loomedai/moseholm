@@ -315,7 +315,6 @@ body {
 }
 #action-menu {
 	position: relative;
-	//padding: 10px 4px 10px 4px;
 	background-color: #63754C;
 	cursor: pointer;
 }
@@ -362,30 +361,28 @@ body {
 }
 @keyframes slideOpen {
 	0% { height: 0px; }
-	100% { height: 450px; }
+	100% { height: 200px; }
 }
 @keyframes slideShut {
-	0% { height: 450px; }
+	0% { height: 200px; }
 	100% { height: 0px; }
 }
 
 @media screen and (min-width:550px) {
 
 	.imgWrap{
-		flex-direction:row;
+		//flex-direction:row;
 	}
 	.btnWrapper{
 		display: flex;
 		flex-direction: column;
 	}
 
-	@keyframes slideOpen {
-		0% { height: 0px; }
-		100% { height: 200px; }
+	.slideOpen {
+		100% {height: 200px}
 	}
-	@keyframes slideShut {
-		0% { height: 200px; }
-		100% { height: 0px; }
+	.slideShut{
+		0% {height: 200px}
 	}
 
 }

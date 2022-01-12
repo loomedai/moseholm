@@ -272,15 +272,14 @@ if(!empty($_POST["data"])){
 
         <div class="imgWrap" id="frKas">
 
-            <img class="imgStorBox" src="img/boxStorKasse-lille.png" >
-            <img class="imgStorBox2" src="img/boxStork.png">
-            <div class="btnWrapper">
-                <button class="btn btn-primary btnfirst m-1 " id="action-menu">
-                    Læs mere
+<!--            <img class="imgStorBox" src="img/boxStorKasse-lille.png" >-->
+            <img src="img/TEST.png">
+            <div>
+                 <button class="btn btn-primary btnfirst" id="action-menu">
+                Læs mere
                 </button>
                 <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
             </div>
-
         </div>
 
     </div>
@@ -292,7 +291,7 @@ if(!empty($_POST["data"])){
 
     <p class="cookie-text">
         Vi bruger cookies
-        <button onclick="remove()" class="btn-dark">Acceptere</button>
+        <button onclick="remove()" class="btn-dark">Accepter</button>
     </p>
 
 
@@ -313,10 +312,10 @@ if(!empty($_POST["data"])){
 
         <div class="vh-100 imgWrap" id="frKas">
 
-            <img class="imgStorBox" src="img/boxlillekasse-lille.png" >
+            <img class="imgStorBox" src="img/TEST.png" >
             <img class="imgStorBox2" src="img/boxLille.png">
-            <div class="btnWrapper">
-                <button class="btn btn-primary btnfirst m-1 " id="action-menu">
+            <div>
+                <button class="btn btn-primary btnfirst" id="action-menu">
                     Læs mere
                 </button>
                 <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
@@ -344,8 +343,8 @@ if(!empty($_POST["data"])){
 
             <img class="imgStorBox" src="img/boxBlandSelv-lille.png" >
             <img class="imgStorBox2" src="img/boxBlandselvDesk.png">
-            <div class="btnWrapper">
-                <button class="btn btn-primary btnfirst m-1 " id="action-menu">
+            <div>
+                <button class="btn btn-primary btnfirst" id="action-menu">
                     Læs mere
                 </button>
                 <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
@@ -373,12 +372,13 @@ if(!empty($_POST["data"])){
 
             <img class="imgStorBox" src="img/boxBeautyPic-lille.png" >
             <img class="imgStorBox2" src="img/boxBeautyPic.png">
-            <div class="btnWrapper">
-                <button class="btn btn-primary btnfirst m-1 " id="action-menu">
+            <div>
+                <button class="btn btn-primary btnfirst" id="action-menu">
                     Læs mere
                 </button>
                 <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
             </div>
+
         </div>
 
     </div>

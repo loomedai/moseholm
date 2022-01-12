@@ -273,7 +273,7 @@ if(!empty($_POST["data"])){
 
         <div class="imgWrap" id="frKas">
 
-            <img class="imgStorBox " src="img/StorKasse-lille.png" >
+            <img class="imgStorBox" src="img/StorKasse-lille.png" >
             <img class="imgStorBox2" src="img/boxStork.png">
             <button class="btn btn-primary btnfirst" id="action-menu">
                 Læs mere om vores Store kasse

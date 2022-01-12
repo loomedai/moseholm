@@ -53,7 +53,7 @@ if(!empty($_POST["data"])){
     ];
 
     $db ->sql( $sql, $bind, false);
-    echo "Din bruger er nu oprettet, og du kan forvente din første box den kommende lørdag. <a href='index.html'>Tilmeld en ny box.</a>";
+    echo "Din bruger er nu oprettet, og du kan forvente din første box den kommende lørdag. <a href='index.php'>Tilmeld en ny box.</a>";
     exit;
 }
 
@@ -258,22 +258,21 @@ if(!empty($_POST["data"])){
 <section class="scroll" id="kas1">
     <div id="SBWrapper" class="SBwrapper vh-100 bg-primary">
         <div id="sub-menu">
-            <p class="kasBes text-winter font-weight-bold">
-                Pris: 249 kr <br>
-            </p>
-            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
+            <div class="kasBes">
+            <p class="text-winter font-weight-bold">
+                Pris: 249 kr </p>
+            <p class="text-winter">
+                Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
                 Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
                 Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
             </p>
-
-
                 <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
-
+            </div>
         </div>
 
-        <div class="vh-100 imgWrap" id="frKas">
+        <div class="imgWrap" id="frKas">
 
-            <img class="DeskBoxS" src="img/boxBlandselvDesk.png">
+            <img class="DeskBoxS" src="img/boxStork.png">
             <button class="btn btn-primary btnfirst" id="action-menu">
                 Læs mere om vores Store kasse
             </button>
@@ -292,21 +291,37 @@ if(!empty($_POST["data"])){
         <button onclick="remove()" class="btn-dark">Acceptere</button>
     </p>
 
-    <script>
-        function remove(){
-            const myDiv = document.getElementById("gone")
-            const parent = myDiv.parentNode;
-            parent.removeChild(myDiv)
-            console.log("do something");
-        }
-    </script>
+
 
 </div>
 
 <section class="scroll" id="kas2">
-    <div class="kasse kasse2">
-        <h2 class="text-winter">Billede til kasse 2</h2>
-    </div></section>
+    <div id="SBWrapper" class="LBWrapper vh-100 bg-dark">
+        <div id="sub-menu">
+            <p class="kasBes text-winter font-weight-bold">
+                Pris: 249 kr <br>
+            </p>
+            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
+                Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
+                Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
+            </p>
+
+
+            <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+
+        </div>
+
+        <div class="vh-100 imgWrap" id="frKas">
+
+            <img class="DeskBoxS" src="img/boxLille.png">
+            <button class="btn btn-primary btnfirst" id="action-menu">
+                Læs mere om vores Store kasse
+            </button>
+
+        </div>
+
+    </div>
+</section>
 <section class="scroll" id="kas3">
     <div class="kasse kasse3">
         <h2 class="text-winter">Billede til pluk selv kassen</h2>
@@ -357,13 +372,14 @@ if(!empty($_POST["data"])){
 <script src="js/main.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-
 <script>
-    // alert("Vi bruger cookies og registrere statistik om brugen af vores hjemmeside fordi vi gerne vil gøre den bedre og mere målrettet. Ved at klikke 'ok' accepterer du brugen af cookies. og giver samtykke for følgende domæner: \n" +
-    //     "\n" +
-    //     "Moseholmgaard.dk, Cookiepolitikken er sidst opdateret d. 11.01.2022.")
+    function remove(){
+        const myDiv = document.getElementById("gone")
+        const parent = myDiv.parentNode;
+        parent.removeChild(myDiv)
+        console.log("do something");
+    }
 </script>
-
 
 </body>
 </html>

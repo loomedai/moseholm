@@ -6,35 +6,198 @@
 
 <!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
 <head>
-	<!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
 	<meta charset="utf-8">
 
-	<link rel="icon" href="https://i.talpix.lt/zz67A.png">
-
-	<!-- Titel som ses oppe i browserens tab mv. -->
 	<title>Moseholm gård</title>
 
-	<!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
 	<meta name="copyright" content="Information om copyright">
 
-	<!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.scss" rel="stylesheet" type="text/css">
 
-	<!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/9078a86c62.js" crossorigin="anonymous"></script>
-	<nav class="navbar sticky-top bg-white justify-content-center">
-		<a class="navbar-brand" href="#">
-			<img src="img/logo_3.png" width="50" class="d-inline-block align-top" alt="">
-		</a>
-	</nav>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<link rel="icon" href="https://i.talpix.lt/zz67A.png">
 </head>
 
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-white">
+	<a class="navbar-brand text-primary" href="#">
+		<img src="img/nav%20logo%20grøn.png">
+	</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
+			aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+		<i class="fas fa-bars text-primary"></i>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav ml-auto align-items-end">
+			<li class="nav-item active" >
+				<a class="nav-link text-primary" href="index.php">Stor Kasse <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link text-primary" href="/moseholm/index.php#2">Lille Kasse <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link text-primary" href="/moseholm/index.php#2">Pluk Selv <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link text-primary" href="/moseholm/index.php#2">Hudpleje Kasse <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link text-primary" href="/moseholm/index.php#2">Produkter <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link text-primary" href="omos.html">Gården <span class="sr-only">(current)</span></a>
+			</li>
+
+		</ul>
+		<ul class=" navbar-nav align-items-end">
+			<li type="button" class="nav-item active form-inline me-2" data-toggle="modal" data-target="#Modal">
+				<i class="far fa-user text-primary text-right"></i>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close ml-auto mr-2" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-header">
+				<h3 class="modal-title text-primary" id="ModalLabel">Log ind</h3>
+			</div>
+			<div class="modal-body">
+
+				<form class="m-5 bg-gradient-primary" method="post" action="login.php" enctype="multipart/form-data">
+
+
+					<div class="col-12 col-md-6 m-auto">
+						<div class="form-group">
+							<input class="form-control text-primary" type="text" name="username" id="" placeholder="Skriv dit brugernavn" value="">
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 m-auto">
+						<div class="form-group">
+							<input class="form-control text-primary" type="password" name="password" id="" placeholder="Skriv dit kodeord" value="">
+						</div>
+					</div>
+
+
+					<div class="m-auto d-flex">
+						<button class="btn btn-winter" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
+						<button class="btn btn-primary" type="submit" name="submit"  id="login" value="Login">Login</button>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="Modal2Label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close ml-auto mr-2" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="modal-header">
+				<h3 class="modal-title text-primary" id="Modal2Label">Opret bruger</h3>
+			</div>
+			<div class="modal-body">
+
+				<form class="m-5 bg-gradient-primary" method="POST" action="userformular.php" enctype="multipart/form-data">
+
+					<div class="row">
+
+						<div class="col-12 col-md-6">
+							<div class="form-group">
+								<input class="form-control text-primary" type="text" name="data[username]" id="udername" placeholder="Brugernavn" value="">
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6">
+							<div class="form-group">
+								<input class="form-control text-primary" type="password" name="data[password]" id="password" placeholder="Kodeord" value="">
+
+							</div>
+
+						</div>
+						<br>
+
+						<div class="col-12 col-md-6">
+							<div class="form-group">
+								<input class="form-control text-primary" type="text" name="data[firstname]" id="firstname" placeholder="Fornavn" value="">
+
+							</div>
+
+						</div>
+						<br>
+
+						<div class="col-12 col-md-6">
+							<div class="form-group">
+								<input class="form-control text-primary" type="text" name="data[lastname]" id="lastname" placeholder="Efternavn" value="">
+
+							</div>
+
+						</div>
+						<br>
+
+						<div class="col-12 col-md-6">
+							<div class="form-group">
+								<input class="form-control text-primary" type="email" name="data[email]" id="email" placeholder="Email" value="">
+							</div>
+						</div>
+						<br>
+
+						<div class="col-12">
+							<div class="form-group">
+								<label for="address">Adresse</label>
+								<textarea class="form-control text-primary" name="data[address]" id="address" placeholder="Vejnavn, hus og etage nummer, postnummer og by."></textarea>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-3">
+							<div class="form-group">
+								<select class="form-control text-primary" name=data[box]">
+									<option value="">Vælg boks</option>
+									<option value="Stor Boks">Stor Boks</option>
+									<option value="Lille boks">Lille Boks</option>
+									<option value="Pluk selv">Pluk Selv</option>
+									<option value="Beauty boks">Beauty Boks</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-3 offset-md-3 d-flex">
+
+							<button class="form-control btn btn-primary m-auto" type="submit" id="btnSubmit">Opret bruger</button>
+							<button type="button" class="btn m-auto" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
+
+						</div>
+
+					</div>
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <div class="container.produkt">
 	<div class="header.billede">

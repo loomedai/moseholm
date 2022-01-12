@@ -398,7 +398,7 @@ if(!empty($_POST["data"])){
     </div>
     <div class="list">
 
-        <p class="pF">|</p><p class="pF">Forside</p><p class="pF">|</p><p class="pF">Produkter</p><p class="pF">|</p><p class="pF">Om os</p><p class="pF">|</p><p class="pF">Log ind</p><p class="pF">|</p>
+        <p class="pF">|</p><p class="pF">Forside</p><p class="pF">|</p><p class="pF">Om os</p><p class="pF">|</p><p class="pF">Log ind</p><p class="pF">|</p>
 
     </div>
     <div class="sam">
@@ -413,7 +413,7 @@ if(!empty($_POST["data"])){
     </div>
     <div class="sam">
 
-        <p class="pF">cvr-nummer XXXXXXXX</p>
+        <p class="pF">cvr-nummer XXXXXXXX</p><p class="pF">|</p><p class="pF">Lyngevej 15, 4180 Sorø</p>
 
     </div>
 </section>

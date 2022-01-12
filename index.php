@@ -272,7 +272,7 @@ if(!empty($_POST["data"])){
 
         <div class="imgWrap" id="frKas">
 
-            <img class="imgStorBox " src="img/boxStorKasse-lille.png" >
+            <img class="imgStorBox" src="img/boxStorKasse-lille.png" >
             <img class="imgStorBox2" src="img/boxStork.png">
             <div>
                  <button class="btn btn-primary btnfirst" id="action-menu">
@@ -316,7 +316,8 @@ if(!empty($_POST["data"])){
 
         <div class="vh-100 imgWrap" id="frKas">
 
-            <img class="DeskBoxS" src="img/boxLille.png">
+            <img class="imgStorBox" src="img/boxlillekasse-lille.png" >
+            <img class="imgStorBox2" src="img/boxLille.png">
             <button class="btn btn-primary btnfirst" id="action-menu">
                 Læs mere om vores Store kasse
             </button>
@@ -344,7 +345,8 @@ if(!empty($_POST["data"])){
 
         <div class="vh-100 imgWrap" id="frKas">
 
-            <img class="DeskBoxS" src="img/boxBlandselvDesk.png">
+            <img class="imgStorBox" src="img/boxBlandSelv-lille.png" >
+            <img class="imgStorBox2" src="img/boxBlandselvDesk.png">
             <button class="btn btn-primary btnfirst" id="action-menu">
                 Læs mere om vores Store kasse
             </button>
@@ -372,7 +374,8 @@ if(!empty($_POST["data"])){
 
         <div class="vh-100 imgWrap" id="frKas">
 
-            <img class="DeskBoxS" src="img/BeautyPic.png">
+            <img class="imgStorBox" src="img/boxBeautyPic-lille.png" >
+            <img class="imgStorBox2" src="img/boxBeautyPic.png">
             <button class="btn btn-primary btnfirst" id="action-menu">
                 Læs mere om vores Store kasse
             </button>

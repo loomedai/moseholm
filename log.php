@@ -66,7 +66,7 @@ $user = $_SESSION['user'];
                 <a class="nav-link text-winter" href="#kas3">Pluk selv <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link text-winter" href="#kas4">Hudpleje kasse <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-winter" href="#kas4">Helse kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link text-winter" href="produkt.html">Produkter <span class="sr-only">(current)</span></a>

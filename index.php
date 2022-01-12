@@ -294,7 +294,7 @@ if(!empty($_POST["data"])){
 
     <p class="cookie-text">
         Vi bruger cookies
-        <button onclick="remove()" class="btn-dark">Accepter</button>
+        <button onclick="remove()" class="btn-dark cknap">Accepter</button>
     </p>
 
 

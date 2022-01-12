@@ -387,8 +387,6 @@ if(!empty($_POST["data"])){
     </div>
 </section>
 <section class="scroll" id="kas5">
-    <div class="bund">
-    </div>
 
     <div class="some">
 

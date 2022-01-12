@@ -207,11 +207,6 @@ h2 {
 	margin-top: 70px;
 }
 
-.bund{
-	width: 100%;
-	height: 30vh;
-	background-color: white;
-}
 .some{
 	display: flex;
 	align-items: center;
@@ -247,6 +242,11 @@ h2 {
 	z-index: 1030;
 	margin-left: 30px;
 	margin-bottom: 20px;
+}
+
+.cknap{
+	border-radius: 10px;
+	border: none;
 }
 
 .cookie-text{
@@ -301,6 +301,10 @@ h2 {
 	margin-bottom: 0px !important;
 }
 
+#kas5{
+	height: 50vh !important;
+}
+
 .fab {
 	color: #f8f8f8;
 	margin-right: 5vh;
@@ -350,7 +354,6 @@ body {
 }
 #action-menu {
 	position: relative;
-	background-color: #63754C;
 	cursor: pointer;
 }
 #sub-menu {
@@ -382,6 +385,7 @@ body {
 }
 .btn{
 	border-radius: 10px;
+	width: 150px;
 }
 
 #ok{

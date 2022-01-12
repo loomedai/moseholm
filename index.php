@@ -296,31 +296,31 @@ if(!empty($_POST["data"])){
 </div>
 
 <section class="scroll" id="kas2">
-<!--    <div id="SBWrapper" class="SBwrapper vh-100 bg-dark">-->
-<!--        <div id="sub-menu">-->
-<!--            <p class="kasBes text-winter font-weight-bold">-->
-<!--                Pris: 249 kr <br>-->
-<!--            </p>-->
-<!--            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.-->
-<!--                Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).-->
-<!--                Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.-->
-<!--            </p>-->
-<!---->
-<!---->
-<!--            <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>-->
-<!---->
-<!--        </div>-->
-<!---->
-<!--        <div class="vh-100 imgWrap" id="frKas">-->
-<!---->
-<!--            <img class="DeskBoxS" src="img/boxStork.png">-->
-<!--            <button class="btn btn-primary btnfirst" id="action-menu">-->
-<!--                Læs mere om vores Store kasse-->
-<!--            </button>-->
-<!---->
-<!--        </div>-->
-<!---->
-<!--    </div>-->
+    <div id="SBWrapper" class="LBWrapper vh-100 bg-dark">
+        <div id="sub-menu">
+            <p class="kasBes text-winter font-weight-bold">
+                Pris: 249 kr <br>
+            </p>
+            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
+                Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
+                Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
+            </p>
+
+
+            <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+
+        </div>
+
+        <div class="vh-100 imgWrap" id="frKas">
+
+            <img class="DeskBoxS" src="img/boxLille.png">
+            <button class="btn btn-primary btnfirst" id="action-menu">
+                Læs mere om vores Store kasse
+            </button>
+
+        </div>
+
+    </div>
 </section>
 <section class="scroll" id="kas3">
     <div class="kasse kasse3">

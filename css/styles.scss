@@ -116,20 +116,17 @@ p {
 	background-image: url("../img/DeskBlue.png");
 }
 .BeaWrapper{
-	background-image: url("img/DeskBrown.png");
+	background-image: url("../img/DeskBrown2.png");
 }
 
-.DeskBoxS{
-
-}
 .imgWrap{
-	max-height: 600px;
+	max-height: 500px;
 }
 
 .imgWrap{
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction:column;
 	align-items: center;
 	justify-content: center;
 	margin: auto;
@@ -174,20 +171,6 @@ h2 {
 .kasBes{
 	margin-top: 70px;
 }
-
-.kasse1 {
-	background-color: #A8C288;
-}
-
-.kasse2{
-	background-color: #63754C;
-
-}
-
-.kasse3 {
-	background-color: #333847;
-}
-
 
 .bund{
 	width: 100%;
@@ -332,7 +315,7 @@ body {
 }
 #action-menu {
 	position: relative;
-	padding: 10px 4px 10px 4px;
+	//padding: 10px 4px 10px 4px;
 	background-color: #63754C;
 	cursor: pointer;
 }
@@ -367,19 +350,16 @@ body {
 	border-radius: 10px;
 }
 
+#ok{
+	margin-left: 20px;
+}
+
 .slideOpen {
 	animation: slideOpen 1s forwards;
 }
 .slideShut{
 	animation: slideShut 1s forwards;
 }
-
-
-
-#ok{
-	margin-left: 20px;
-}
-
 @keyframes slideOpen {
 	0% { height: 0px; }
 	100% { height: 450px; }
@@ -389,9 +369,15 @@ body {
 	100% { height: 0px; }
 }
 
-@media screen and (min-width:350px) {
+@media screen and (min-width:550px) {
 
-
+	.imgWrap{
+		flex-direction:row;
+	}
+	.btnWrapper{
+		display: flex;
+		flex-direction: column;
+	}
 
 	@keyframes slideOpen {
 		0% { height: 0px; }

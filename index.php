@@ -274,12 +274,13 @@ if(!empty($_POST["data"])){
 
             <img class="imgStorBox" src="img/boxStorKasse-lille.png" >
             <img class="imgStorBox2" src="img/boxStork.png">
-            <div>
-                 <button class="btn btn-primary btnfirst" id="action-menu">
-                Læs mere om vores Store kasse
+            <div class="btnWrapper">
+                <button class="btn btn-primary btnfirst m-1 " id="action-menu">
+                    Læs mere
                 </button>
                 <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
             </div>
+
         </div>
 
     </div>
@@ -308,19 +309,18 @@ if(!empty($_POST["data"])){
                 Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
                 Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
             </p>
-
-
-            <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
-
         </div>
 
         <div class="vh-100 imgWrap" id="frKas">
 
             <img class="imgStorBox" src="img/boxlillekasse-lille.png" >
             <img class="imgStorBox2" src="img/boxLille.png">
-            <button class="btn btn-primary btnfirst" id="action-menu">
-                Læs mere om vores Store kasse
-            </button>
+            <div class="btnWrapper">
+                <button class="btn btn-primary btnfirst m-1 " id="action-menu">
+                    Læs mere
+                </button>
+                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+            </div>
 
         </div>
 
@@ -338,18 +338,18 @@ if(!empty($_POST["data"])){
                 Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
             </p>
 
-
-            <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
-
         </div>
 
         <div class="vh-100 imgWrap" id="frKas">
 
             <img class="imgStorBox" src="img/boxBlandSelv-lille.png" >
             <img class="imgStorBox2" src="img/boxBlandselvDesk.png">
-            <button class="btn btn-primary btnfirst" id="action-menu">
-                Læs mere om vores Store kasse
-            </button>
+            <div class="btnWrapper">
+                <button class="btn btn-primary btnfirst m-1 " id="action-menu">
+                    Læs mere
+                </button>
+                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+            </div>
 
         </div>
 
@@ -367,19 +367,18 @@ if(!empty($_POST["data"])){
                 Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
             </p>
 
-
-            <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
-
         </div>
 
         <div class="vh-100 imgWrap" id="frKas">
 
             <img class="imgStorBox" src="img/boxBeautyPic-lille.png" >
             <img class="imgStorBox2" src="img/boxBeautyPic.png">
-            <button class="btn btn-primary btnfirst" id="action-menu">
-                Læs mere om vores Store kasse
-            </button>
-
+            <div class="btnWrapper">
+                <button class="btn btn-primary btnfirst m-1 " id="action-menu">
+                    Læs mere
+                </button>
+                <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
+            </div>
         </div>
 
     </div>

@@ -239,7 +239,7 @@ if(!empty($_POST["data"])){
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-3 offset-md-3 d-flex">
+                        <div class="col-12 offset-md-3">
 
                             <button class="form-control btn btn-primary m-auto" type="submit" id="btnSubmit">Opret bruger</button>
                             <button type="button" class="btn m-auto" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>

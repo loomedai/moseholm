@@ -9,6 +9,9 @@ $(function ()
     $.scrollify({
         section : '.scroll',
     });
+        $.scrollify.setOptions({
+            scrollSpeed: 700,
+        });
 });
 
 

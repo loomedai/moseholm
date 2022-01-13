@@ -315,8 +315,8 @@ if(!empty($_POST["data"])){
 
         <div class="vh-100 imgWrap" id="frKas">
 
-            <img class="imgStorBox" src="img/TEST.png" >
-            <img class="imgStorBox2" src="img/boxLille.png">
+            <img alt class="imgStorBox" src="img/TEST.png" >
+            <img alt class="imgStorBox2" src="img/boxLille.png">
             <div>
                 <button class="btn btn-primary btnfirst" id="action-menu">
                     Læs mere
@@ -344,8 +344,8 @@ if(!empty($_POST["data"])){
 
         <div class="vh-100 imgWrap" id="frKas">
 
-            <img class="imgStorBox" src="img/boxBlandSelv-lille.png" >
-            <img class="imgStorBox2" src="img/boxBlandselvDesk.png">
+            <img alt class="imgStorBox" src="img/boxBlandSelv-lille.png" >
+            <img alt class="imgStorBox2" src="img/boxBlandselvDesk.png">
             <div>
                 <button class="btn btn-dark btnfirst" id="action-menu">
                     Læs mere
@@ -373,8 +373,8 @@ if(!empty($_POST["data"])){
 
         <div class="vh-100 imgWrap" id="frKas">
 
-            <img class="imgStorBox" src="img/boxBeautyPic-lille.png" >
-            <img class="imgStorBox2" src="img/boxBeautyPic.png">
+            <img alt class="imgStorBox" src="img/boxBeautyPic-lille.png" >
+            <img alt class="imgStorBox2" src="img/boxBeautyPic.png">
             <div>
                 <button class="btn btn-beauty btnfirst" id="action-menu">
                     Læs mere
@@ -398,7 +398,7 @@ if(!empty($_POST["data"])){
     </div>
     <div class="list">
 
-        <p class="pF">|</p><p class="pF">Forside</p><p class="pF">|</p><p class="pF">Om os</p><p class="pF">|</p><p class="pF">Log ind</p><p class="pF">|</p>
+        <p class="pF">|</p><a class="pF" href="index.php">Forside</a><p class="pF">|</p><a class="pF" href="omos.html">Om os</a><p class="pF">|</p><a class="pF" type="button" data-toggle="modal" data-target="#Modal"">Log in</a><p class="pF">|</p>
 
     </div>
     <div class="sam">

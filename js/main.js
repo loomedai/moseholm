@@ -10,7 +10,7 @@ $(function ()
         section : '.scroll',
     });
         $.scrollify.setOptions({
-            scrollSpeed: 700,
+            scrollSpeed: 500,
         });
 });
 

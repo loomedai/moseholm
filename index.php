@@ -262,12 +262,12 @@ if(!empty($_POST["data"])){
             <div class="kasBes">
             <p class="text-winter font-weight-bold">
                 Pris: 349 kr </p>
-            <p class="text-winter">
+            <p class="">
                 Grønt og lidt luxus! - Særlig god til mad-nørderi.
                 <br>
                 I denne kasse finder du ud over ca 5 kg. grøntsager (minimum 5 forskellige varianter) også hjemmelavede økologiske produkter.
                 Moseholm producere selv lækre spislige specialiteter men samarbejder også med bønder, smags-entusiaster og sylte-specialister på vestsjælland.
-                Produkterne kan derfor være alt fra mamelade, sirup, most og meget mere - besøg evt.
+                </p> <p class="gemt text-winter">Produkterne kan derfor være alt fra mamelade, sirup, most og meget mere - besøg evt.
                 vores gårdbutik og hør nærmere om udvalget du kan møde i denne kasse.
             </p>
             </div>

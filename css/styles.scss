@@ -373,6 +373,7 @@ body {
 
 #sub-menu, #sub-menu2, #sub-menu3, #sub-menu4 {
 	padding-left: 2rem;
+	padding-right: 2rem;
 	overflow: hidden;
 	max-height: 0;
 	background-color: #A8C288;
@@ -386,6 +387,9 @@ body {
 }
 #sub-menu4{
 	background-color:#735f5a ;
+}
+.gemt{
+	display:none;
 }
 .payment{
 	max-width: 500px;
@@ -455,7 +459,9 @@ body {
 		display: flex;
 		flex-direction: column;
 	}
-
+	.gemt{
+		display: flex;
+	}
 }
 
 @media (max-width:357px){

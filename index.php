@@ -275,8 +275,8 @@ if(!empty($_POST["data"])){
 
         <div class="imgWrap" id="frKas">
 
-<!--            <img class="imgStorBox" src="img/boxStorKasse-lille.png" >-->
-            <img src="img/TEST.png">
+            <img alt class="imgStorBox" src="img/boxStorKasse-lille.png" >
+            <img alt class="imgStorBox2" src="img/TEST.png">
             <div>
                  <button class="btn btn-light text-winter btnfirst" id="action-menu">
                 Læs mere
@@ -341,7 +341,7 @@ if(!empty($_POST["data"])){
 
         <div class="imgWrap" id="frKas">
 
-            <img alt class="imgStorBox" src="img/TEST.png" >
+            <img alt class="imgStorBox" src="img/boxlillekasse-lille.png" >
             <img alt class="imgStorBox2" src="img/boxLille.png">
             <div>
                 <button class="btn btn-primary btnfirst" id="action-menu2">

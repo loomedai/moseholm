@@ -357,13 +357,14 @@ if(!empty($_POST["data"])){
 
 <section class="scroll" id="kas3">
     <div id="SBWrapper" class="PSWrapper vh-100 bg-dark">
-        <div id="sub-menu">
+        <div id="sub-menu3">
             <p class="kasBes text-winter font-weight-bold">
-                Pris: 249 kr <br>
+                Pris: 249 kr
             </p>
-            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
-                Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
-                Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
+            <p class="text-winter">pluk selv! kom og være med.. og vælg dine favoritter!
+                Bland selv din egen grøntkasse hver 2. uge og sammensæt lige præcis dét du står og mangler og bruger mest af. Udvælg 5 kg grøntsager til hver kasse..
+                <br>og ønsker du også selv at høste, så grip en skovl, tang eller trillebøre ved havedøren og slå dig løs på Moseholms marker lige uden for. (for at være en del af pluk-selv-høsterne skal man minimum købe 3 måneders abonnement)
+
             </p>
 
         </div>
@@ -373,7 +374,7 @@ if(!empty($_POST["data"])){
             <img alt class="imgStorBox" src="img/boxBlandSelv-lille.png" >
             <img alt class="imgStorBox2" src="img/boxBlandselvDesk.png">
             <div>
-                <button class="btn btn-dark btnfirst" id="action-menu">
+                <button class="btn btn-dark btnfirst" id="action-menu3">
                     Læs mere
                 </button>
                 <button class="btn btn-dark btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>
@@ -386,13 +387,12 @@ if(!empty($_POST["data"])){
 
 <section class="scroll" id="kas4">
     <div id="SBWrapper" class="BeaWrapper vh-100 bg-beauty">
-        <div id="sub-menu">
+        <div id="sub-menu4">
             <p class="kasBes text-winter font-weight-bold">
-                Pris: 249 kr <br>
+                Pris: 429 kr
             </p>
-            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
-                Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
-                Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
+            <p class=" text-winter">skønhed kommer både inde og udefra!
+                Bestiller du denne kasse præsentere vi dig på Moseholms skønhedsunivers og levere en grøntkasse hver 2.uge med lækre grøntsager og skønne produkter til din hud.
             </p>
 
         </div>
@@ -402,7 +402,7 @@ if(!empty($_POST["data"])){
             <img alt class="imgStorBox" src="img/boxBeautyPic-lille.png" >
             <img alt class="imgStorBox2" src="img/boxBeautyPic.png">
             <div>
-                <button class="btn btn-beauty btnfirst" id="action-menu">
+                <button class="btn btn-beauty btnfirst" id="action-menu4">
                     Læs mere
                 </button>
                 <button class="btn btn-beauty btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>

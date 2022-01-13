@@ -30,7 +30,7 @@ $(function ()
         else {
 
             document.getElementById( "sub-menu" ).className = "slideOpen";
-            document.getElementById("action-menu").textContent = 'læs mindre';
+            document.getElementById("action-menu").textContent = 'Læs mindre';
             isOpen = true;
 
         }
@@ -53,7 +53,7 @@ $(function ()
         else {
 
             document.getElementById( "sub-menu2" ).className = "slideOpen";
-            document.getElementById("action-menu2").textContent = 'læs mindre';
+            document.getElementById("action-menu2").textContent = 'Læs mindre';
 
             isOpen2 = true;
 
@@ -75,7 +75,7 @@ $(function ()
         else {
 
             document.getElementById( "sub-menu3" ).className = "slideOpen";
-            document.getElementById("action-menu3").textContent = 'læs mindre';
+            document.getElementById("action-menu3").textContent = 'Læs mindre';
             isOpen3 = true;
 
         }
@@ -97,7 +97,7 @@ $(function ()
         else {
 
             document.getElementById( "sub-menu4" ).className = "slideOpen";
-            document.getElementById("action-menu4").textContent = 'læs mindre';
+            document.getElementById("action-menu4").textContent = 'Læs mindre';
             isOpen4 = true;
 
         }
@@ -133,18 +133,18 @@ $('.navbar a').on('click', function (e)
 
 
 
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}
+// function myFunction() {
+//     var dots = document.getElementById("dots");
+//     var moreText = document.getElementById("more");
+//     var btnText = document.getElementById("myBtn");
+//
+//     if (dots.style.display === "none") {
+//         dots.style.display = "inline";
+//         btnText.innerHTML = "Read more";
+//         moreText.style.display = "none";
+//     } else {
+//         dots.style.display = "none";
+//         btnText.innerHTML = "Read less";
+//         moreText.style.display = "inline";
+//     }
+// }

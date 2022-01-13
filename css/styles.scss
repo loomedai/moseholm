@@ -397,9 +397,16 @@ body {
 .slideOpen {
 	animation: slideOpen 1s forwards;
 }
+
 .slideShut{
 	animation: slideShut 1s forwards;
 }
+
+.header\.billede{
+	margin-top: 85px;
+}
+
+
 @keyframes slideOpen {
 	0% { height: 0px; }
 	100% { height: 200px; }

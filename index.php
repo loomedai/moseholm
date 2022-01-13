@@ -88,8 +88,8 @@ if(!empty($_POST["data"])){
 
 <nav class="navbar navbar-expand-lg sticky-top">
     <a class="navbar-brand text-winter" href="#">
-        <img src="img/log.png" class="logobig" alt="">
-        <img src="img/logsmall.png" class="logosmall" alt="">
+        <img src="img/log.png" class="logobig">
+        <img src="img/logsmall.png" class="logosmall">
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -262,12 +262,12 @@ if(!empty($_POST["data"])){
             <div class="kasBes">
             <p class="text-winter font-weight-bold">
                 Pris: 349 kr </p>
-            <p class="">
+            <p class="text-winter">
                 Grønt og lidt luxus! - Særlig god til mad-nørderi.
                 <br>
                 I denne kasse finder du ud over ca 5 kg. grøntsager (minimum 5 forskellige varianter) også hjemmelavede økologiske produkter.
                 Moseholm producere selv lækre spislige specialiteter men samarbejder også med bønder, smags-entusiaster og sylte-specialister på vestsjælland.
-                </p> <p class="gemt text-winter">Produkterne kan derfor være alt fra mamelade, sirup, most og meget mere - besøg evt.
+                Produkterne kan derfor være alt fra mamelade, sirup, most og meget mere - besøg evt.
                 vores gårdbutik og hør nærmere om udvalget du kan møde i denne kasse.
             </p>
             </div>
@@ -276,7 +276,7 @@ if(!empty($_POST["data"])){
         <div class="imgWrap" id="frKas">
 
 <!--            <img class="imgStorBox" src="img/boxStorKasse-lille.png" >-->
-            <img src="img/TEST.png" alt="">
+            <img src="img/TEST.png">
             <div>
                  <button class="btn btn-light text-winter btnfirst" id="action-menu">
                 Læs mere
@@ -371,7 +371,7 @@ if(!empty($_POST["data"])){
 
         <div class="imgWrap" id="frKas">
 
-            <img alt class="imgStorBox" src="img/boxBlandSelv-lille.png" >
+            <img alt class="imgStorBox" src="img/Box-Blandselv-mobile.png" >
             <img alt class="imgStorBox2" src="img/boxBlandselvDesk.png">
             <div>
                 <button class="btn btn-dark btnfirst" id="action-menu3">
@@ -424,7 +424,7 @@ if(!empty($_POST["data"])){
     </div>
     <div class="list">
 
-        <p class="pF">|</p><a class="pF" href="index.php">Forside</a><p class="pF">|</p><a class="pF" href="omos.html">Om os</a><p class="pF">|</p><a class="pF" type="button" data-toggle="modal" data-target="#Modal">Log in</a><p class="pF">|</p>
+        <p class="pF">|</p><a class="pF" href="index.php">Forside</a><p class="pF">|</p><a class="pF" href="omos.html">Om os</a><p class="pF">|</p><a class="pF" type="button" data-toggle="modal" data-target="#Modal"">Log in</a><p class="pF">|</p>
 
     </div>
     <div class="sam">

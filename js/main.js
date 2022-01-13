@@ -39,6 +39,36 @@ $(function ()
 
     })
 
+    let actionMenu2 = document.getElementById( "action-menu2" );
+
+
+        actionMenu2.addEventListener( "click", function () {
+
+            if ( isOpen ) {
+
+            document.getElementById( "sub-menu2" ).className = "slideShut";
+            document.getElementById("action-menu2").textContent = 'Læs mere';
+            document.getElementById("LBWrapper").classList.add("vh-100");
+            isOpen = false;
+
+        }
+        else {
+
+            document.getElementById( "sub-menu2" ).className = "slideOpen";
+            document.getElementById("action-menu2").textContent = 'læs mindre';
+            document.getElementById("LBWrapper").classList.remove("vh-100");
+            isOpen = true;
+
+        }
+
+    })
+
+    let burger = document.getElementsByClassName("navbar-toggler");
+
+    burger.onclick = function(){
+        document.getElementById("sub-menu").className ="slideShut";
+        isOpen = false;
+    }
 
 $('.navbar a').on('click', function (e)
   {

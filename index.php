@@ -302,12 +302,13 @@ if(!empty($_POST["data"])){
 </div>
 
 <section class="scroll" id="kas2">
-    <div id="SBWrapper" class="LBWrapper vh-100 bg-dark">
-        <div id="sub-menu">
+    <div id="LBWrapper" class="LBWrapper vh-100 bg-dark">
+        <div id="sub-menu2">
+
             <p class="kasBes text-winter font-weight-bold">
-                Pris: 249 kr <br>
+                Pris: 249 kr
             </p>
-            <p class="kasBes text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
+            <p class="text-winter">Vores mest populære grøntkasse - sammensat med kærlighed af grønne fingre.
                 Indeholder ca 5 kg. grøntsager (minimum 5 forskellige varianter).
                 Vi sammensætter kassens indhold efter årstiden og garantere friske, sprøde og velsmagende grøntsager i verdensklasse.
             </p>
@@ -318,7 +319,7 @@ if(!empty($_POST["data"])){
             <img alt class="imgStorBox" src="img/TEST.png" >
             <img alt class="imgStorBox2" src="img/boxLille.png">
             <div>
-                <button class="btn btn-primary btnfirst" id="action-menu">
+                <button class="btn btn-primary btnfirst" id="action-menu2">
                     Læs mere
                 </button>
                 <button class="btn btn-primary btnfirst" data-toggle="modal" data-target="#Modal2">Bestil kassen</button>

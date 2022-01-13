@@ -361,18 +361,21 @@ body {
 	padding: 0;
 	margin: 0;
 }
-#action-menu {
+#action-menu, #action-menu2 {
 	position: relative;
 	cursor: pointer;
 }
-#sub-menu {
+
+#sub-menu, #sub-menu2 {
 	padding-left: 2rem;
 	overflow: hidden;
 	height: 0px;
 	background-color: #A8C288;
 }
 
-
+#sub-menu2{
+	background-color: #63754C ;
+}
 .payment{
 	max-width: 500px;
 }

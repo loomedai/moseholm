@@ -439,6 +439,11 @@ body {
 }
 
 @media screen and (min-width:550px) {
+	#sub-menu, #sub-menu2, #sub-menu3, #sub-menu4{
+		margin-top: 15px;
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
 
 	.imgWrap{
 		//flex-direction:row;

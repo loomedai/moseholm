@@ -25,6 +25,7 @@ $(function ()
             document.getElementById( "sub-menu" ).className = "slideShut";
             document.getElementById("action-menu").textContent = 'Læs mere';
             document.getElementById("SBWrapper").classList.add("vh-100");
+            // document.getElementById("frKas").style.margin = "0px";
             isOpen = false;
 
         }
@@ -40,16 +41,16 @@ $(function ()
     })
 
     let actionMenu2 = document.getElementById( "action-menu2" );
-
+    let isOpen2 = false;
 
         actionMenu2.addEventListener( "click", function () {
 
-            if ( isOpen ) {
+            if ( isOpen2 ) {
 
             document.getElementById( "sub-menu2" ).className = "slideShut";
             document.getElementById("action-menu2").textContent = 'Læs mere';
             document.getElementById("LBWrapper").classList.add("vh-100");
-            isOpen = false;
+            isOpen2 = false;
 
         }
         else {
@@ -57,22 +58,22 @@ $(function ()
             document.getElementById( "sub-menu2" ).className = "slideOpen";
             document.getElementById("action-menu2").textContent = 'læs mindre';
             document.getElementById("LBWrapper").classList.remove("vh-100");
-            isOpen = true;
+            isOpen2 = true;
 
         }
 
     })
     let actionMenu3 = document.getElementById( "action-menu3" );
-
+    let isOpen3 = false;
 
     actionMenu3.addEventListener( "click", function () {
 
-        if ( isOpen ) {
+        if ( isOpen3 ) {
 
             document.getElementById( "sub-menu3" ).className = "slideShut";
             document.getElementById("action-menu3").textContent = 'Læs mere';
             document.getElementById("LBWrapper").classList.add("vh-100");
-            isOpen = false;
+            isOpen3 = false;
 
         }
         else {
@@ -80,22 +81,22 @@ $(function ()
             document.getElementById( "sub-menu3" ).className = "slideOpen";
             document.getElementById("action-menu3").textContent = 'læs mindre';
             document.getElementById("LBWrapper").classList.remove("vh-100");
-            isOpen = true;
+            isOpen3 = true;
 
         }
 
     })
     let actionMenu4 = document.getElementById( "action-menu4" );
-
+    let isOpen4 = false;
 
     actionMenu4.addEventListener( "click", function () {
 
-        if ( isOpen ) {
+        if ( isOpen4 ) {
 
             document.getElementById( "sub-menu4" ).className = "slideShut";
             document.getElementById("action-menu4").textContent = 'Læs mere';
             document.getElementById("LBWrapper").classList.add("vh-100");
-            isOpen = false;
+            isOpen4 = false;
 
         }
         else {
@@ -103,18 +104,27 @@ $(function ()
             document.getElementById( "sub-menu4" ).className = "slideOpen";
             document.getElementById("action-menu4").textContent = 'læs mindre';
             document.getElementById("LBWrapper").classList.remove("vh-100");
-            isOpen = true;
+            isOpen4 = true;
 
         }
 
     })
 
-    // let burger = document.getElementsByClassName("navbar-toggler");
-    //
-    // burger.onclick = function(){
-    //     document.getElementById("sub-menu").className ="slideShut";
-    //     isOpen = false;
-    // }
+    let burger = document.querySelector(".navbar-toggler");
+
+    burger.addEventListener("click", function(){
+        document.getElementById("sub-menu").className ="slideShut";
+        document.getElementById("SBWrapper").classList.add("vh-100");
+        document.getElementById( "sub-menu2" ).className = "slideShut";
+        document.getElementById("LBWrapper").classList.add("vh-100");
+        document.getElementById( "sub-menu3" ).className = "slideShut";
+        document.getElementById("LBWrapper").classList.add("vh-100");
+        document.getElementById( "sub-menu4" ).className = "slideShut";
+        document.getElementById("LBWrapper").classList.add("vh-100");
+        isOpen = false;
+    })
+
+
 
 $('.navbar a').on('click', function (e)
   {

@@ -327,7 +327,7 @@ if(!empty($_POST["data"])){
 
 
 <section class="scroll" id="kas2">
-    <div id="LBWrapper" class="LBWrapper vh-100 bg-dark">
+    <div id="LBWrapper" class="LBWrapper vh-100 bg-primary">
         <div id="sub-menu2">
 
             <p class="kasBes text-winter font-weight-bold">

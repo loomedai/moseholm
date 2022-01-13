@@ -19,7 +19,7 @@ if(!empty($_POST["data"])){
     ];
 
     $db ->sql( $sql, $bind, false);
-    header("Location: bruger.php");
+    header("Location: betaling.html");
     exit;
 }
 ?>

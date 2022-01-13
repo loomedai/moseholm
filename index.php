@@ -293,13 +293,38 @@ if(!empty($_POST["data"])){
 <div class="container bg-winter cookie" id="gone">
 
     <p class="cookie-text">
-        Vi bruger cookies
+        Vi bruger <a class="text-dark" data-toggle="modal" href="#cookies"><u>cookies<u></a>
         <button onclick="remove()" class="btn-dark cknap">Accepter</button>
     </p>
-
-
-
 </div>
+
+<div class="modal fade" id="cookies" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="close ml-auto mr-2" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-header">
+                <h3 class="modal-title text-dark" id="ModalLabel">Vi bruger cookie.. men til hvad?</h3>
+            </div>
+            <div class="modal-body">
+                <p class="cookiepol">Vi bruger cookies og registrere statistik om brugen af vores hjemmeside
+                    fordi vi gerne vil gøre den bedre og mere målrettet. Ved at klikke 'OK'
+                    accepterer du brugen af cookies og giver samtykke for følgende domæner:<br><br>
+                    Moseholmgaard.dk<br><br>
+                    Cookiepolitikken er sidst opdateret d. 11.01.2022
+                </p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal" onclick="remove()">OK</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 
 <section class="scroll" id="kas2">
     <div id="LBWrapper" class="LBWrapper vh-100 bg-dark">

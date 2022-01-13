@@ -339,7 +339,7 @@ if(!empty($_POST["data"])){
             </p>
         </div>
 
-        <div class="vh-100 imgWrap" id="frKas">
+        <div class="imgWrap" id="frKas">
 
             <img alt class="imgStorBox" src="img/TEST.png" >
             <img alt class="imgStorBox2" src="img/boxLille.png">
@@ -369,7 +369,7 @@ if(!empty($_POST["data"])){
 
         </div>
 
-        <div class="vh-100 imgWrap" id="frKas">
+        <div class="imgWrap" id="frKas">
 
             <img alt class="imgStorBox" src="img/boxBlandSelv-lille.png" >
             <img alt class="imgStorBox2" src="img/boxBlandselvDesk.png">
@@ -397,7 +397,7 @@ if(!empty($_POST["data"])){
 
         </div>
 
-        <div class="vh-100 imgWrap" id="frKas">
+        <div class="imgWrap" id="frKas">
 
             <img alt class="imgStorBox" src="img/boxBeautyPic-lille.png" >
             <img alt class="imgStorBox2" src="img/boxBeautyPic.png">

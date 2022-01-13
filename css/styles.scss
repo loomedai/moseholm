@@ -155,13 +155,16 @@ p {
 }
 
 .imgWrap{
+	max-height: 500px;
+}
+
+.imgWrap{
 	width: 100%;
 	display: flex;
 	flex-direction:column;
 	align-items: center;
 	justify-content: center;
 	margin: auto;
-	max-height: 500px;
 }
 
 #mere {display: none;}

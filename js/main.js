@@ -24,8 +24,6 @@ $(function ()
 
             document.getElementById( "sub-menu" ).className = "slideShut";
             document.getElementById("action-menu").textContent = 'Læs mere';
-            document.getElementById("SBWrapper").classList.add("vh-100");
-            // document.getElementById("frKas").style.margin = "0px";
             isOpen = false;
 
         }
@@ -33,7 +31,6 @@ $(function ()
 
             document.getElementById( "sub-menu" ).className = "slideOpen";
             document.getElementById("action-menu").textContent = 'læs mindre';
-            document.getElementById("SBWrapper").classList.remove("vh-100");
             isOpen = true;
 
         }
@@ -49,7 +46,7 @@ $(function ()
 
             document.getElementById( "sub-menu2" ).className = "slideShut";
             document.getElementById("action-menu2").textContent = 'Læs mere';
-            document.getElementById("LBWrapper").classList.add("vh-100");
+
             isOpen2 = false;
 
         }
@@ -57,7 +54,7 @@ $(function ()
 
             document.getElementById( "sub-menu2" ).className = "slideOpen";
             document.getElementById("action-menu2").textContent = 'læs mindre';
-            document.getElementById("LBWrapper").classList.remove("vh-100");
+
             isOpen2 = true;
 
         }
@@ -72,7 +69,6 @@ $(function ()
 
             document.getElementById( "sub-menu3" ).className = "slideShut";
             document.getElementById("action-menu3").textContent = 'Læs mere';
-            document.getElementById("LBWrapper").classList.add("vh-100");
             isOpen3 = false;
 
         }
@@ -80,7 +76,6 @@ $(function ()
 
             document.getElementById( "sub-menu3" ).className = "slideOpen";
             document.getElementById("action-menu3").textContent = 'læs mindre';
-            document.getElementById("LBWrapper").classList.remove("vh-100");
             isOpen3 = true;
 
         }
@@ -95,7 +90,7 @@ $(function ()
 
             document.getElementById( "sub-menu4" ).className = "slideShut";
             document.getElementById("action-menu4").textContent = 'Læs mere';
-            document.getElementById("LBWrapper").classList.add("vh-100");
+
             isOpen4 = false;
 
         }
@@ -103,7 +98,6 @@ $(function ()
 
             document.getElementById( "sub-menu4" ).className = "slideOpen";
             document.getElementById("action-menu4").textContent = 'læs mindre';
-            document.getElementById("LBWrapper").classList.remove("vh-100");
             isOpen4 = true;
 
         }

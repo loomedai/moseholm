@@ -98,7 +98,7 @@ if(!empty($_POST["data"])){
 
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto align-items-end">
-            <li class="nav-item active" >
+            <li class="nav-item active">
                 <a class="nav-link text-winter" href="#kas1">Stor kasse <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">

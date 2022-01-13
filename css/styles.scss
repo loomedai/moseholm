@@ -414,8 +414,8 @@ body {
 }
 .btn{
 	border-radius: 10px;
-	width: 150px;
-	margin: 10px;
+	width: 140px;
+	margin: 6px;
 }
 
 #ok{
@@ -464,6 +464,10 @@ body {
 	}
 	.gemt{
 		display: flex;
+	}
+
+	.btn{
+		width: 150px;
 	}
 }
 

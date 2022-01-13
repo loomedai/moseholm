@@ -358,12 +358,12 @@ if(!empty($_POST["data"])){
 <section class="scroll" id="kas3">
     <div id="SBWrapper" class="PSWrapper vh-100 bg-dark">
         <div id="sub-menu3">
-            <p class="kasBes text-winter font-weight-bold">
+            <p class="kasBes text-winter font-weight-bold pt-3 ">
                 Pris: 249 kr
             </p>
-            <p class="text-winter">pluk selv! kom og være med.. og vælg dine favoritter!
+            <p class="text-winter pb-3">pluk selv! kom og være med.. og vælg dine favoritter!
                 Bland selv din egen grøntkasse hver 2. uge og sammensæt lige præcis dét du står og mangler og bruger mest af. Udvælg 5 kg grøntsager til hver kasse..
-                <br>og ønsker du også selv at høste, så grip en skovl, tang eller trillebøre ved havedøren og slå dig løs på Moseholms marker lige uden for. (for at være en del af pluk-selv-høsterne skal man minimum købe 3 måneders abonnement)
+                <br>og ønsker du også selv at høste, så grip en skovl, tang eller trillebøre ved havedøren og slå dig løs på Moseholms marker lige uden for. </p> <p class="gemt">(for at være en del af pluk-selv-høsterne skal man minimum købe 3 måneders abonnement)
 
             </p>
 

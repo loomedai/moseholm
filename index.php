@@ -293,7 +293,7 @@ if(!empty($_POST["data"])){
 <div class="container bg-winter cookie" id="gone">
 
     <p class="cookie-text">
-        Vi bruger <a class="text-dark" data-toggle="modal" href="#cookies"><u>cookies<u></a>
+        Vi bruger <a class="text-dark" data-toggle="modal" href="#cookies"><u>cookies</u></a>
         <button onclick="remove()" class="btn-dark cknap">Accepter</button>
     </p>
 </div>

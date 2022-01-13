@@ -88,8 +88,8 @@ if(!empty($_POST["data"])){
 
 <nav class="navbar navbar-expand-lg sticky-top">
     <a class="navbar-brand text-winter" href="#">
-        <img src="img/log.png" class="logobig">
-        <img src="img/logsmall.png" class="logosmall">
+        <img alt="" src="img/log.png" class="logobig">
+        <img alt="" src="img/logsmall.png" class="logosmall">
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -424,7 +424,7 @@ if(!empty($_POST["data"])){
     </div>
     <div class="list">
 
-        <p class="pF">|</p><a class="pF" href="index.php">Forside</a><p class="pF">|</p><a class="pF" href="omos.html">Om os</a><p class="pF">|</p><a class="pF" type="button" data-toggle="modal" data-target="#Modal"">Log in</a><p class="pF">|</p>
+        <p class="pF">|</p><a class="pF" href="index.php">Forside</a><p class="pF">|</p><a class="pF" href="omos.html">Om os</a><p class="pF">|</p><a class="pF" type="button" data-toggle="modal" data-target="#Modal">Log in</a><p class="pF">|</p>
 
     </div>
     <div class="sam">

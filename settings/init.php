@@ -9,10 +9,10 @@ if(CONFIG_LIVE == 0){
     $DB_USER = "root";
     $DB_PASS = "";
 }else{
-    $DB_SERVER = "";
-    $DB_NAME = "";
-    $DB_USER = "";
-    $DB_PASS = "";
+    $DB_SERVER = "loomedai.com.mysql";
+    $DB_NAME = "loomedai_commoseholm";
+    $DB_USER = "loomedai_commoseholm";
+    $DB_PASS = "123456";
 }
 
 $db = new db($DB_SERVER, $DB_NAME, $DB_USER, $DB_PASS);

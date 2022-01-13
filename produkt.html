@@ -83,13 +83,13 @@
                 <form class="m-5 bg-gradient-primary" method="post" action="login.php" enctype="multipart/form-data">
 
 
-                    <div class="col-12 col-md-6 m-auto">
+                    <div class="m-auto">
                         <div class="form-group">
                             <input class="form-control text-primary" type="text" name="username" placeholder="Skriv dit brugernavn" value="">
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 m-auto">
+                    <div class="m-auto">
                         <div class="form-group">
                             <input class="form-control text-primary" type="password" name="password" placeholder="Skriv dit kodeord" value="">
                         </div>
@@ -125,7 +125,7 @@
 
                         <div class="col-12 col-md-6">
                             <div class="form-group">
-                                <input class="form-control text-primary" type="text" name="data[username]" id="udername" placeholder="Brugernavn" value="">
+                                <input class="form-control text-primary" type="text" name="data[username]" id="username" placeholder="Brugernavn" value="">
                             </div>
                         </div>
 
@@ -174,15 +174,15 @@
                             <div class="form-group">
                                 <select class="form-control text-primary" name=data[box]">
                                     <option value="">Vælg boks</option>
-                                    <option value="Stor Boks">Stor Boks</option>
-                                    <option value="Lille boks">Lille Boks</option>
-                                    <option value="Pluk selv">Pluk Selv</option>
-                                    <option value="Beauty boks">Beauty Boks</option>
+                                    <option value="Stor Boks">Stor boks</option>
+                                    <option value="Lille boks">Lille boks</option>
+                                    <option value="Pluk selv">Pluk selv</option>
+                                    <option value="Beauty boks">Beauty boks</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-3 offset-md-3 d-flex">
+                        <div class="col-12 offset-md-3">
 
                             <button class="form-control btn btn-primary m-auto" type="submit" id="btnSubmit">Opret bruger</button>
                             <button type="button" class="btn m-auto" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>

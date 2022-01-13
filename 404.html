@@ -18,42 +18,46 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <a class="navbar-brand text-winter" href="#">
-        <img src="img/log.png">
+
+
+
+<nav class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand text-winter" href="index.php">
+        <img src="img/log.png" class="logobig">
+
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-winter"></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active" id="link">
+        <ul class="navbar-nav ml-auto align-items-end">
+            <li class="nav-item active" >
                 <a class="nav-link text-winter" href="#kas1">Stor kasse <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active" id="link">
+            <li class="nav-item active">
                 <a class="nav-link text-winter" href="#kas2">Lille kasse <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active" id="link">
+            <li class="nav-item active">
                 <a class="nav-link text-winter" href="#kas3">Pluk selv <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active" id="link">
+            <li class="nav-item active">
                 <a class="nav-link text-winter" href="#kas4">Helse kasse <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active" id="link">
-                <a class="nav-link text-winter" href="#prod">Produkter <span class="sr-only">(current)</span></a>
+            <li class="nav-item active">
+                <a class="nav-link text-winter" href="produkt.html">Produkter <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active" id="link">
-                <a class="nav-link text-winter" href="#Går">Gården <span class="sr-only">(current)</span></a>
+            <li class="nav-item active">
+                <a class="nav-link text-winter" href="omos.html">Om gården <span class="sr-only">(current)</span></a>
             </li>
 
         </ul>
-        <form class="d-flex">
+        <ul class=" navbar-nav align-items-end">
             <li type="button" class="nav-item active form-inline me-2" data-toggle="modal" data-target="#Modal">
-                <i class="far fa-user text-winter"></i>
+                <i class="far fa-user text-winter text-right"></i>
             </li>
-        </form>
+        </ul>
     </div>
 </nav>
 
@@ -67,31 +71,30 @@
                 <h3 class="modal-title text-primary" id="ModalLabel">Log ind</h3>
             </div>
             <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button " class="btn" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
-                <button type="button" class="btn btn-primary" id="btn2">Log ind</button>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="Modal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-            <button type="button" class="close ml-auto mr-2" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="modal-header">
-                <h3 class="modal-title text-primary" id="Modal2Label">Opret bruger</h3>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button " class="btn" data-toggle="modal" data-target="#Modal" id="btn3" data-dismiss="modal">Log ind</button>
-                <button type="button" class="btn btn-primary" id="btn4">Opret bruger</button>
+                <form class="m-5 bg-gradient-primary" method="post" action="login.php" enctype="multipart/form-data">
+
+
+                    <div class="m-auto">
+                        <div class="form-group">
+                            <input class="form-control text-primary" type="text" name="username" placeholder="Skriv dit brugernavn" value="">
+                        </div>
+                    </div>
+
+                    <div class="m-auto">
+                        <div class="form-group">
+                            <input class="form-control text-primary" type="password" name="password" placeholder="Skriv dit kodeord" value="">
+                        </div>
+                    </div>
+
+
+                    <div class="m-auto d-flex">
+                        <button class="btn btn-winter" data-toggle="modal" data-target="#Modal2" id="btn1" data-dismiss="modal">Opret bruger</button>
+                        <button class="btn btn-primary" type="submit" name="submit"  id="login" value="Login">Login</button>
+                    </div>
+
+                </form>
+
             </div>
         </div>
     </div>

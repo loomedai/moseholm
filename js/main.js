@@ -112,9 +112,9 @@ $(function ()
         document.getElementById( "sub-menu2" ).className = "slideShut";
         document.getElementById("LBWrapper").classList.add("vh-100");
         document.getElementById( "sub-menu3" ).className = "slideShut";
-        document.getElementById("LBWrapper").classList.add("vh-100");
+        document.getElementById("PSWrapper").classList.add("vh-100");
         document.getElementById( "sub-menu4" ).className = "slideShut";
-        document.getElementById("LBWrapper").classList.add("vh-100");
+        document.getElementById("BeaWrapper").classList.add("vh-100");
         isOpen = false;
     })
 

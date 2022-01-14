@@ -267,7 +267,7 @@ if(!empty($_POST["data"])){
                 <br>
                 I denne kasse finder du ud over ca 5 kg. grøntsager (minimum 5 forskellige varianter) også hjemmelavede økologiske produkter.
                 I samarbejder med bønder, smags-entusiaster og sylte-specialister på vestsjælland, har vi fundet de helt rigtige smage til dig og familien.
-                </p> <p class="gemt">Produkterne kan derfor være alt fra mamelade, sirup, most og meget mere - besøg evt.
+                </p> <p class="gemt text-winter">Produkterne kan derfor være alt fra mamelade, sirup, most og meget mere - besøg evt.
                 vores gårdbutik og hør nærmere om udvalget du kan møde i denne kasse.
             </p>
             </div>
@@ -363,7 +363,7 @@ if(!empty($_POST["data"])){
             </p>
             <p class="text-winter pb-3">pluk selv! kom og være med.. og vælg dine favoritter!
                 Bland selv din egen grøntkasse hver 2. uge og sammensæt lige præcis dét du står og mangler og bruger mest af. Udvælg 5 kg grøntsager til hver kasse..
-                <br>og ønsker du også selv at høste, så grip en skovl, tang eller trillebøre ved havedøren og slå dig løs på Moseholms marker lige uden for. </p> <p class="gemt">(for at være en del af pluk-selv-høsterne skal man minimum købe 3 måneders abonnement)
+                <br>og ønsker du også selv at høste, så grip en skovl, tang eller trillebøre ved havedøren og slå dig løs på Moseholms marker lige uden for. </p> <p class="gemt text-winter">(for at være en del af pluk-selv-høsterne skal man minimum købe 3 måneders abonnement)
 
             </p>
 

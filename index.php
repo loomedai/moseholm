@@ -40,8 +40,6 @@ if(!empty($_POST["data"])){
     $data = $_POST["data"];
     $file = $_FILES;
 
-
-
     $sql = "INSERT INTO users (username, email, password, firstname, lastname, address, box) VALUES (:username, :email, :password, :firstname, :lastname, :address, :box)";
     $bind = [":username" => $data["username"],
         ":email" => $data["email"],
@@ -53,14 +51,10 @@ if(!empty($_POST["data"])){
     ];
 
     $db ->sql( $sql, $bind, false);
-    echo "Din bruger er nu oprettet, og du kan forvente din første box den kommende lørdag. <a href='index.php'>Gå tilbage til forsiden</a>";
+    echo "Din bruger er nu oprettet, og du kan forvente din første kasse den kommende lørdag. <a href='index.php'>Gå tilbage til forsiden</a>";
     exit;
 }
-
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
